@@ -1,0 +1,14 @@
+1. Print all the customers and the number of order they have placed
+=> db.customers.aggregate([{$lookup:{from:'order',localField:'id',foreignField:'customerID',as:'orders'}},{$project:{_id:0,name:1,NumberOfOrder:{$size:'$orders'}}}])
+
+2.Print the average number of products when order is placed
+=> db.order.aggregate([{$lookup:{from:'products',localField:'id',foreignField:'id',as:'product'}},{$unwind:'$product'},{$group:{_id:'$id',Total_products:{$sum:'product.Quantity'}}},{$project:{id:null,Average_pe_orderno:{$avg:'$Total_products'}}}])
+
+3.Print the number of people from each country, print the country name and the number of people
+=> db.customers.aggregate([{$group:{_id:'$address.country',count:{$sum:1}}},{$project:{_id:0,Country:'$_id',NumberOfPeople:'$count'}}])
+
+4. Print the number of products which is by the brancd Nike and is a pant
+=> db.products.aggregate([{$match:{brand:'Nike',categories:'pants'}},{$group:{_id:0,No_products:{$sum:1}}}])
+
+5. Print all the brands and the average price of their products
+=> db.products.aggregate([{$group:{_id:'$brand',AvgPrice:{$avg:'$price'}}}])

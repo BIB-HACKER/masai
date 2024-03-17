@@ -1,0 +1,35 @@
+Questions-1:-
+1.Write Mongo query to retrieve name,price from the products
+=> db.products.find({},{_id:0,name:1,price:1})
+
+2. Write Mongo query to find buyers city and zip code ?
+=> db.buyers.find({},{_id:0,"address.city":1,"address.zip":1})
+
+3. Write Mongo query to find suppliers name and phone ?
+=> db.suppliers.find({},{_id:0,name:1,phone:1})
+
+4. Write Mongo query to find amount of payment made through "UPI" ?
+=> db.payments.aggregate({$match:{paymentMethod:"UPI"}},{$group:{_id:null, totalAmount:{$sum:"$amount"}}})
+
+5. Write Mongo query to retrieve the name of the suppliers where the city is Tokyo
+=> db.suppliers.find({city:"Tokyo"},{_id:0,name:1})
+
+Questions-2:-
+1.Find the employees who have made a sale on the same day as "John Doe."
+=> db.sales.aggregate([{$match:{sale_date:ISODate('2023-09-16T00:00:00.000+00:00')}},{$lookup:{from:"employees",localField:"employee_id",foreignField:"_id",as:"employee"}},
+  {$unwind:"$employee"},{$project:{_id:0,"employee.name":1}}])
+
+2.List the employees who have worked on all projects in the "Engineering" department
+=> db.departments.aggregate([{$match:{name:"Engineering"}},{$lookup:{from:"employees",localField:"_id",foreignField:"department_id",as:"employee"}},{$unwind:"$employee"},
+   {$project:{_id:0,"employee.name":1}}])
+
+3.Find the employees who have made at least one sale in each quarter of 2023
+=> db.employees.aggregate([{$lookup:{from:"sales",localField:"_id",foreignField:"employee_id",as:"sale"}},{$unwind:"$sale"},{$match:{"sale.sale_date":{$regex:/2023/}}},
+   {$project:{_id:0,name:1}}])
+
+4.Retrieve the names of employees who have made a sale on the same day they were hired
+=> 
+
+5.List the employees who have not been assigned to any project in the "Finance" department
+=> db.departments.aggregate([{$match:{name:"Finance"}},{$lookup:{from:"employees",localField:"_id",foreignField:"department_id",as:"employee"}},{$unwind:"$employee"},
+   {$match:{"employee.name":{$exists:false}}},{$project:{_id:0,"employee.name":1}}])

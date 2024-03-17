@@ -1,0 +1,157 @@
+1> use dbs
+
+> db.dropDatabase() # delete database
+
+> db.createCollection("collectionName")
+
+> db.collectionName.drop()
+
+> db.collectionName.insert({
+    "name":"Bihakar,
+    "email":["s1@gmail.com", "s2@gmail.com"],
+    "password":1234
+})
+
+> db.collectionName.insertMany([{
+    "_id":1,
+    "name":"Bihakar,
+    "email":["s1@gmail.com", "s2@gmail.com"],
+    "password":1234
+  },
+  { "_id":2,
+    "name":"paul,
+    "email":["s1@gmail.com", "s2@gmail.com"],
+    "password":4321
+  },
+  { "_id":3,
+    "name":"papon,
+    "email":["s1@gmail.com", "s2@gmail.com"],
+    "password":5674,
+    "date": new Date()}])
+
+> db.collectionName.find().pretty()
+
+> db.collectionName.find().pretty().limit(2)
+
+> db.collectionName.find().pretty().limit(2).count()
+
+> db.collectionName.find({name:"Bibhakar"}).count()
+
+> db.collectionName.find({$sort:{_id:-1}})
+
+> db.collectionName.find().count() // count the number of rows in the output
+
+> db.collectionName.update({name:"kuchvi"},   // name kuchvi have not in collection but when 
+    {"_id":2,                                   // when use "upsert = true" it automaticaly data insert in collection
+    "name":"paul,
+    "email":["s1@gmail.com", "s2@gmail.com"],
+    "password":4321},
+    {upsert:true})
+
+> db.collectionName.update({name:"Bibhakar"},{$inc:{_id:2}})  // increment operator
+
+> db.collectionName.update({name:"Bibhakar"},{$rename:{name:"Papon paul"}})  // rename operator
+  db.collectionName.update({$rename:{name:"Papon paul"}})  // all name rename operator
+
+> db.collectionName.remove({name:"Papon paul"})  // remove operator
+
+2> db.Users.inserOne()
+
+3> db.Users.find()
+
+4> db.Users.inserOne({name:"Alice"})  // insert data in collerction
+
+5> db.Users.insertOne([{name:'Alice',marks:50,subject:['Math'],adress:{state_id:'CA',country_id:'USA'}}])
+
+5> db.Users.find({marks:50}) // find the marks is 50
+
+6> db.Users.find({marks:{$gte:40}}) // find the marks is >=40 [$gte = grater equal]
+
+7> db.Users.find({marks:{$lte:40}}) // find the marks is <=40 [$lt = less eual]
+
+8> db.Users.find({$and:[{marks:{$gt:40}},{name:"Alice"}]}) // find the marks is >=40 and name is "Alice"
+
+9> db.Users.find({$or:[{marks:{$gt:40}},{name:"Alice"}]}) // find the marks is >=40 or name is "Alice"
+
+10> db.Users.find({subject:"Sci"})
+
+11> db.Users.find({address:"CAN"})
+
+12> DB.Users.find({"address.country_id":"USA"})
+
+13> db.Users.find({"subject.0":"Sci"})
+
+14> db.Users.updateOne({name:"Alice"},{$set:{marks:35}}) //update value
+
+15> db.Users.updateMany({name:"Alice"},{$set:{marks:35}}) // update all value
+
+16> db.Users.updateMany({name:"Charlie"},{$set:{subject:"History"}}) // update subject
+
+17> db.Users.updateMany({name:"Charlie"},{$set:{subject:["Sci","History"]}}) // replace subject again
+
+18> db.Users.updateMany({name:"Bob"},{$push:{subject:"English"}}) // add new value in subject
+
+19> db.Users.updateMany({name:"Bob"},{$pop:{subject:1}}) // delete last one(RIGHT) subject
+
+20> db.Users.updateMany({name:"Bob"},{$pop:{subject:-1}}) // delete first one(LEFT) subject
+
+21> db.Users.deleteOne({name:"Charlie"}) // delete one data
+    db.Users.deleteOne({"_id": ObjectId("65c36c7a07335a59f2afdf4e")});
+    
+22> db.Users.deleteMany({name:"Charlie"}) // delete all data
+
+> db.Customers.aggregate([{$match:{first_name:"Jarret"}}])
+
+> db.Customers.aggregate([{$match:{age:{$gte:20}}}]) // use in aggregate method to find age>=20
+
+> db.Customers.aggregate([{$match:{$and:[{age:{$gte:18},{$gte:60}}]}}])
+
+> db.Customers.aggregate([{$project:{first_name:1,salary:1}}])  // which column we want to see {inclusion,in}
+
+> db.Customers.aggregate([{$project:{first_name:0,salary:0}}])  // which column we don't want to see {exclution,ex}
+
+> db.Customers.aggregate([{$project:{gender:0}}]) // print all without gender
+
+> ERROR > db.Customers.aggregate([{$project:{gender:0, salary:1}}])  // IT'S SHULD BE MATH THE {0,0} OR {1,1}
+
+> db.Customers.aggregate([{$project:{Name:{$concat:["$first_name"," ","$last_name"]}}}])  // first_name and last_name concat
+
+> db.Customers.aggregate([{$project:{first_name:1,last_name:1}}]) 
+
+> db.Customers.aggregate([{$project:{first_name:1,last_name:1}},{$match:{age:{$gte:20}}}]) // no value
+
+> db.Customers.aggregate([{$match:{age:{$gte:20}}},{$project:{first_name:1,last_name:1}}])
+
+> db.Customers.aggregate([{$group: {_id:"$gender"}}]) // give me all unique gender form the database
+
+> db.Customers.aggregate([{$group: {_id:"$gender",count:{$count:{}}}}]) // give me all the uniqe genders and the number of people form each gender
+
+> db.Customers.aggregate([{$group: {_id:"$gender",AverageAge:{$avg:"$salary"}}}]) // avg of all the people
+
+> db.Customers.aggregate([{$group: {_id:"1 ,AverageAge:{$avg:"$salary"}}}]) // avg of all the people
+
+> db.Customers.aggregate([{$group: {_id:{name:"$first_name",gender:"$gender"} ,AverageAge:{$avg:"$salary"}}}]) // select firstnam ,age from customers group by firstname,age
+
+> db.Customers.aggregate([{$match: {age:{$gte:50}}},{$group:{_id:"$gender",average:{$avg:"$salary"}}}]) // want to get the unique gender of those people who are above the age 50 and their avg salary
+
+> db.Customers.aggregate([{$group: {_id:"$gender",AverageAge:{$avg:"$salary"}}},{$match:{AverageAge:{$gte:25000}}}]) // i want to get all uniqe genders and the avg sal where avg sal is >=25000
+
+> db.Customers.aggregate([{$match:{age:{$gte:20}}},{$project:{full_name:{$concat:["$first_name"," ","$last_name"]},age:1}}]) 
+  // print full name of all those Users who have age >=40
+  db.Customers.aggregate([{$project:{full_name:{$concat:["$first_name"," ","$last_name"]},age:1}},{$match:{age:{$gte:10}}}]) 
+  // print full name of all those Users who have age >=40
+
+> db.students.aggregate([{$lookup:{from:"Courses", localfield:"courses",foreignField:"course", as:"EnrolledCourse"}}]) 
+  // join two table or collerction data
+
+> db.students.aggregate([{$match:{age:{$gte:24}}},{$lookup:{from:"Courses", localfield:"courses",foreignField:"course", as:"EnrolledCourse"}}]) 
+  // print all the students and their courses who have age >= 30
+
+> db.Students.aggregate([{$project:{name:1, no_of_courses:{$size:"$courses"}}},{$sort:{no_of_courses:-1}},{$limit:1}]) 
+  // print the number all the students and the number of courses they are enrolled into
+
+> db.Courses.aggregate([{$lookup:{from:"Students", localfield:"course",foreignField:"courses", as:"EnrolledCourse"}},
+  {$project:{course:1, no_of_students:{$size:"$EnrolledCourse"}}}]) // print the name of the course and the number of student in each course
+
+> db.Students.aggregate([{$unwind:"$courses"},{$group:{_id: "$courses", no_of_students:{$count:{}}}}]) // print the name of the course and the number of student in each course(you have to use the main collection as students)
+ 

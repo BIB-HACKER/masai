@@ -1,0 +1,279 @@
+#########Day : 5 (Mongo DB - 2 , Aggregation) 
+Adding Data 
+Data 
+{
+  "buyers": [
+    {
+      "_id": 1,
+      "name": "John Smith",
+      "email": "john@hotmail.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "_id": 1,
+      "customer_id": 1,
+      "order_date": "2022-03-01",
+      "ship_date": "2022-03-05",
+      "status": "shipped"          // can be shipped or pending
+      "total": 50.25
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "name": "iPhone 13",
+      "category_id": 1,
+      "price": 999.99,
+      "quantity": 50,
+      "supplier_id": 1
+    }
+  ],
+  "payments": [
+    {
+      "_id": 1,
+      "payment_date": "2022-03-01",
+      "amount": 50.25,
+      "orderdtl_id": 1,
+      "paymentMethod": "UPI",      // can be UPI, Debit Card, Cradit Card, COD or net banking
+      "paymentstatus": "success"  // can be shipped, pending, or null
+    }
+  ],
+  "categories": [
+    {
+      "_id": 1,
+      "name": "Electronics"
+    }
+  ],
+  "order_details": [
+    {
+      "_id": 1,
+      "order_id": 1,
+      "product_id": 1,
+      "quantity": 1,
+      "price": 999.99,
+      "payment_id": 1,
+      "shipper_id": 1
+    }
+  ],
+  "shippers": [
+    {
+      "_id": 1,
+      "name": "UPS",     // can be UPS , FedEx, or DHL
+      "phone": "1-800-742-5877"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": 1,
+      "name": "Apple",
+      "city": "Cupertino",
+      "phone": "1-800-275-2273"
+    }
+  ]
+}
+​
+Link - https://chat.openai.com/share/523b37b9-8062-41e6-86e7-d0fb7bf2e17d 
+Filtering and Searching : Part - 2
+Filtering :
+Refer Previous days notes for more. 
+db.payment.find({"paymentstatus" : "success"})
+db.payment.find( {"paymentMethod" : { $ne: "UPI" }} )
+​
+Size : 
+db.user.find({"hobbies" : { $size : 3 }})
+​
+How to retreve sepecific data : 
+db.payment.find( 
+	{"paymentMethod" : { $ne: "UPI" }} , 
+	{"payment_date": 1 , "amount" : 1 , _id : 0}  
+)
+
+db.emp.find({ } , { "first_name": 1 , "_id" : 0 }) //It will give me only first_name
+db.emp.find({  } , { "_id" : 0 }) //It will give me all data without ID
+​
+Searching : 
+db.buyer.find({ "email" : /hotmail/ })
+db.buyer.find({ "email" : /HOTMAIL/i }) //Case insensitive search 
+
+​
+Aggregation in MongoDB
+Aggregation :
+Match : (Filtering)
+db.payment.findOne()
+db.payment.find({ "paymentMethod" : "UPI" })
+
+//Putting Filter On "UPI"
+db.payment.aggregate( [ 
+	{$match : {"paymentMethod": "UPI"}} 
+] )
+
+//Putting Filter On "UPI" and amount is greater than 50
+db.payment.aggregate( [ 
+	{$match : {"paymentMethod": "UPI" , "amount" : { $gt: 50 }}} 
+] )
+
+//Putting Filter on both "UPI" and  "Paypal"
+db.payment.aggregate([ 
+	{ $match : { $or : [ 
+			{ "paymentMethod" : "UPI" } , { "paymentMethod" : "PayPal" } 
+	] } } 
+])
+​
+Project : (Visualization , Manupulation etc)
+//It will give only amount , payment method and id 
+db.payment.aggregate( [ 
+	{ $project : {  "amount" : 1 , paymentMethod : 1  } } 
+] )
+
+//It will give ony payment method and amount
+db.payment.aggregate( [ 
+	{ $project : {  "amount" : 1 , paymentMethod : 1  } } 
+] )
+
+//It will change the key name
+db.payment.aggregate( [ 
+	{ $project : {  "amount" : 1 , paymentType : "$paymentMethod" , _id : 0 } } 
+] )
+
+//You can go to next level like this - calculating a new field
+db.payment.aggregate( [ 
+{ $project : { 
+		_id : 1 , paymentMethod : 1 , amount : 1 , 
+	"shippingCost" : { $divide : [  { $multiply : [ "$amount" , 10  ] } , 100  ] } } 
+		} 
+] )
+
+//Give the name and the hobbies count for all users
+db.user.aggregate([
+	{ $project : { countOfHobbies : { $size : "$hobbies" } , "name":  1  , _id : 0 } }
+])
+​
+Sort : (Sorting)
+//Sorting ascending order
+db.payment.aggregate([ 
+	{ $sort : { "amount" : 1  } } 
+])
+
+//Sorting descending order
+db.payment.aggregate([ 
+	{ $sort : { "amount" : -1  } } 
+])
+​
+Limit :(Limiting)
+db.payment.aggregate([ { $limit : 5 } ])
+​
+Group : (Grouping )
+//Group by payment method 
+db.payment.aggregate([ { $group : { _id : "$paymentMethod" } } ])
+
+//Group by payment method and calculate the sum 
+db.payment.aggregate([
+	{ $group : { _id : "$paymentMethod" , totalAmount : { $sum : "$amount" } } } 
+])
+
+//Give me the total of amount calculating from all data (_id : null )
+db.payment.aggregate([ 
+	{ $group : { _id : null , totalAmount : { $sum : "$amount" } } } 
+])
+​
+Pipeline inside aggregate : 
+//Group by paymentMethodd and calculate the sum 
+//Then put the filter on "UPI"
+db.payment.aggregate([ 
+	{ $group : { _id : "$paymentMethod" , totalAmount : { $sum : "$amount" } } } , 
+	{ $match : { "_id" : "UPI" } } 
+])
+
+//Group by paymentMethodd and calculate the sum 
+//Then put the filter on "UPI"
+//Project paymentMethod 
+db.payment.aggregate([ 
+	{ $group : { _id : "$paymentMethod" , totalAmount : { $sum : "$amount" } } } , 
+	{ $match : { $or : [ {"_id" : "UPI"} , {"_id" : "PayPal" } ] } } , 
+	{ $project : { _id : 0 , paymentMethod : "$_id" , totalAmount : 1 } } 
+])
+​
+Unwind : (Array Flatting)
+//It will flat the array 
+db.user.aggregate([ { $unwind : "$hobbies" } ])
+
+//Flat the array and then group it 
+db.user.aggregate([ { $unwind : "$hobbies" } , { $group : { _id : "$hobbies" } } ])
+
+//flat the array then agroup it and calculate the count of each group
+db.user.aggregate([ 
+	{ $unwind : "$hobbies" } , 
+	{ $group : { _id : "$hobbies" , "count" : { $sum : 1 } } } 
+])
+
+//With nice view 
+db.user.aggregate([ 
+	{ $unwind : "$hobbies" } , 
+	{ $group : { _id : "$hobbies" , "count" : { $sum : 1 } } } , 
+	{$project : {  _id: 0 , "hobby" :"$_id" , "count" : 1  }} 
+])
+​
+More Problems
+Examples on Aggregation : 
+//Retrieve the orders grouped by "customer_id" with the sum of "total" value
+db.order.aggregate([ 
+	{ $group : { _id : "$customer_id" , totalvalue: { $sum : "$total" } } } 
+])
+
+//Retrieve the orders grouped by "customer_id" with the average of "total" value
+db.orders.aggregate([
+  {
+    $group: {
+      _id: "$customer_id",
+      avgTotal: { $avg: "$total" }
+    }
+  }
+])
+
+//Retrieve the orders grouped by "customer_id" with the Max of "total" value
+db.orders.aggregate([
+  {
+    $group: {
+      _id: "$customer_id",
+      avgTotal: { $max: "$total" }
+    }
+  }
+])
+
+//Like than we can use - $min
+
+//Find the total Count of orders by status 
+db.order.aggregate( [ 
+	{ $group : { _id : "$status" , totalCount : { $sum : 1 } } } 
+] )
+
+
+//Give the name and the hobbies count for all users Where the count is : 3
+db.user.aggregate([
+	{ $project : { countOfHobbies : { $size : "$hobbies" } , "name":  1  , _id : 0 } }, 
+	{ $match : { "countOfHobbies" : 3 } } 
+])
+​
+Write Mongo query to retrieve the unique citye's from the buyers address as "_id".
+db.buyer.distinct("address.city")
+db.buyer.aggregate( [ { $group : { _id : "$address.city" } } ] )
+db.buyer.aggregate( [ { $group : { _id : "$address.city" , count : {$sum : 1} } } ] )
+​
+Write Mongo query to retrieve the unique zip from the buyers address as "_id".
+db.buyer.distinct("address.zip")
+
+db.buyer.aggregate( [ { $group : { _id : "$address.zip" , count: { $sum : 1 } } } ] )
+
+db.buyer.aggregate( [ { $group : { _id : null , count: { $sum : 1 } } } ] )
+
+db.buyer.aggregate( [ 
+	{ $group : { _id : null , count: { $sum : 1 } } } , 
+	{ $project : { _id : 0 } } 
+] )

@@ -1,0 +1,18 @@
+1. Which industry has the highest average revenue per company(Exploration Topic $unwind)
+=> db.companies.aggregate([{$unwind:"$industry"},{$group:{averagerevenue:{$avg:"$revenue_in_million"},_id:"$industry"}},{$sort:{averagerevenue:-1}},{$limit:1}])
+
+2. What is the average revenue for companies in each industry in Sweden
+=> db.companies.aggregate([{$unwind:"$industry"},{$match:{country:"Sweden"}},{$group:{averagerevenue:{$avg:"$revenue_in_million"},_id:"$industry"}}])
+
+3. What is the categorization of companies based on their revenue range (<100M, 100-500M, >500M)
+
+4. Which industry category do companies in Sweden belong to
+=> db.companies.aggregate([{$unwind:"$industry"},{$match:{country:"Sweden"}},{$group:{_id:"$industry"}}])
+
+5. Calculate the average revenue per employee for companies operating in each country, 
+and then find the country with the highest average revenue per employee. 
+Additionally, for the top country, find the number of companies operating in each industry
+
+6. Find the top 2 cities with the highest average revenue per employee ratio among companies 
+operating in each city. For these top cities, determine the total number of companies and 
+the average revenue per employee across all industries

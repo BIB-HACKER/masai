@@ -1,0 +1,17 @@
+1. Give me the the comapany with name Voolia
+=> db.companies.find({name:"Voolia"})
+
+2. Give me all the companies who have number_of_emp >= 1000
+=> db.companies.find({number_of_emp:{$gte:1000}})
+
+3. Give me all the companies that have revenue >= 50
+=> db.companies.find({revenue_in_million:{$gte:50}})
+
+4. Give me all the companies that have revenue between 100 and 1000
+=> db.companies.find({revenue_in_million:{$gte:50,$lte:1000}})
+
+5. Give me all the companies that are in the Pharmaceuticals industry
+=> db.companies.find({industry:"Pharmaceuticals"})
+
+6. Give me all the companies that are in the located from China country
+=> db.companies.find({"address.country":"China"})

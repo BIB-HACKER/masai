@@ -1,0 +1,31 @@
+1. Update the salary of Kimbra Ballentime to $55,000
+
+=> db.Employees.updateOne({first_name:"Kimbra",last_name:"Ballentime"},{$set:{salary:55000}})
+
+2. Update the gender of Alla Spehr to 'Male'
+
+=> db.Employees.updateOne({first_name:"Alla",last_name:"Spehr"},{$set:{gender:"Male"}})
+
+3. Update the age of Bennie Doerr to 20 years old
+
+=> db.Employees.updateOne({first_name:"Bennie",last_name:"Doerr"},{$set:{age:20}})
+
+4. Update the last name of employees with the last name 'Sartain' to 'Smith'
+
+=> db.Employees.updateOne({last_name:"Sartain"},{$set:{last_name:"Smith"}})
+
+5. Change the gender of all employees with a salary less than $40,000 to 'Other'
+
+=> db.Employees.updateOne({salary:{$lte:40000}},{$set:{gender:"Other"}})
+
+6. Delete the employee with the first name 'Bennie' and last name 'Doerr'
+
+=> db.Employees.deleteOne({first_name: "Bennie", last_name: "Doerr"})
+
+7. Delete all employees with a salary less than $30,000
+
+=> db.Employees.deleteMany({salary:{$lte:30000}})
+
+8. Delete all male employees under the age of 40
+
+=> db.Employees.deleteMany({gender:"Male", age:{$lte:40}})

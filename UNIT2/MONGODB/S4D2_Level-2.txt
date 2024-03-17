@@ -1,0 +1,77 @@
+1. Find the names of employees who work in the "Finance" department and have made sales on or after "2023-09-16.
+=> db.Employees.aggregate([{$lookup:{from:"Departments",localField:"department_id",foreignField:"_id",as:"department"}},
+   {$match:{"department.name":"Finance"}},{$lookup:{from:"Sales",localField:"_id",foreignField:"employee_id",as:"sales"}},
+   {$match:{"sales.sale_date":{$gte:ISODate("2023-09-16")}}},{$project:{_id:0,name:1}}])
+
+2. Find the total sales count and total sales amount for each employee who has made a sale, and sort the results by total sales amount in descending order.
+=> db.Employees.aggregate([{$lookup:{from:"Sales",localField:"_id",foreignField:"employee_id",as:"sales"}},{$group:{_id: "$_id",name:{$first:"$name"},
+total_sales_count:{$sum:{$cond:[{$gt:[{$size:"$sales"},0]},1,0]}},total_sales_amount:{$sum:"$sales.amount"}}},{$sort:{total_sales_amount:-1}}])
+
+3. Find all employees who are older than 30
+=> db.Employees.find({age:{$gt:30}})
+
+4. Retrieve a list of departments with more than 10 employees
+=> db.Employees.aggregate([{$group:{_id:"$department_id",employeeCount:{$sum:1}}},{$match:{employeeCount:{$gt:10}}}])
+
+5. Find the employees who have worked in the company for more than 5 years
+=> db.Employees.find({$expr:{$gt:[{$subtract:[ISODate(),"$hire_date"]}, 5*365*24*60*60*1000]}}) 
+
+6.List all employees in the "Engineering" department
+=> db.Employees.aggregate([{$lookup:{from:"Departments",localField:"department_id",foreignField:"_id",as:"department"}},
+   {$unwind: "$department"},{$match:{"department.name":"Engineering"}}])
+
+7. Find the employee with the highest salary
+=> db.Employees.find().sort({"$salary:-1}).limit(1)
+
+8. List the names and ages of employees in the "HR" department
+=> db.Employees.aggregate([{$lookup:{from:"Departments",localField:"department_id",foreignField:"_id",as:"department"}},
+   {$match:{"department.name":"HR"}},{$project:{_id:0,name:1,age:1}}])
+
+9. Find the average age of employees in each department
+=> db.Employees.aggregate([{$lookup:{from:"Departments",localField:"department_id",foreignField:"_id",as:"department"}},
+   {$unwind:"$department"},{$group:{_id:"$department_id",AverageAge:{$avg:"$age"}}},{$project:{AverageAge:1}}])
+
+10. Retrieve the names of employees who have worked on the "Employee Management System" project
+=> db.Employees.aggregate([{$lookup:{from:"Projects",localField:"department_id",foreignField:"department",as:"projects"}},
+   {$unwind:"$projects"},{$match:{"projects.name":"Employee Management System"}},{$project:{_id:0, name:1}}])
+
+11. Find the employees who have not made any sales
+=> db.Employees.aggregate([{$lookup:{from:"Sales",localField:"_id",foreignField:"employee_id",as:"sales"}},
+   {$match:{"sales":{$size:0}}},{$project:{_id:0,name:1}}])
+
+12. List the names of employees who have made a sale in September 2023
+=> db.Employees.aggregate([{$lookup:{from:"Sales",localField: "_id",foreignField:"employee_id",as:"sales"}},{$unwind:"$sales"},
+   {$match:{"sales.sale_date":{$gte: ISODate("2023-09-01"), $lt:ISODate("2023-10-01")}}},{$project:{_id:0,name:1}}])
+
+13. Find the departments where the average employee age is greater than 35
+=> db.Employees.aggregate([{$lookup:{from:"Departments",localField:"department_id",foreignField:"_id",as:"department"}},{$unwind:"$department"},
+   {$match:{age:{$gt:35}}},{$project:{_id:0,name:1,department:"$department.name"}}])
+
+14. Retrieve the names of employees who work in the same office as "John Doe".
+=> db.Employees.aggregate([{$lookup:{from:"Offices",localField:"office_id",foreignField:"_id",as:"office"}},{$unwind:"$office"},
+   {$match:{"office._id":201}},{$project:{_id:0,name:1}}])
+
+15. Find the employees who have worked on at least three different projects
+=> 
+
+16. List the names of employees who have not been assigned to any project
+=> db.Employees.aggregate([ { $lookup: { from: "Projects", localField:"department_id",foreignField:"department",as:"project"}},
+   {$match:{"project":{$size:0}}},{$project:{_id:0,name:1}}])
+   
+17.Find the total sales amount for each employee
+=> db.Sales.aggregate([{lookup:{from:"Employees",foreignField:"_id",foreignField:"_id",as:"employee"}},{$unwind: "$employee"},
+   {$group:{_id:"$employee._id",total_sales_amount:{$sum:"$amount"}}},{{$project:{_id:0,employee_name:"$employee.name",total_sales_amount: 1}}}])
+
+List the employees who have made sales on consecutive days
+Find the employees who have worked on projects from multiple departments
+Find the employees who have the highest sales amount in a single sale
+Retrieve the names of employees who have not made a sale in the last 90 days
+Find the departments where the total employee salaries exceed $500,000
+List the employees who have worked on the "Payroll Software" project and are older than 35
+Retrieve the names of employees who have worked on more projects than their department's average
+Find the total number of sales and the total sales amount for each employee in the "HR" department
+List the employees who have not been assigned to any project in the "Finance" department
+Retrieve the names of employees who have made a sale on the same day they were hired
+Find the employees who have made at least one sale in each quarter of 2023
+List the employees who have worked on all projects in the "Engineering" department
+Find the employees who have made a sale on the same day as "John Doe."

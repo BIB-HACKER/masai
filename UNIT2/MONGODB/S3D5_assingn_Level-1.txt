@@ -1,0 +1,29 @@
+1. Write Mongo query to retrieve the unique citye's from the buyers address as "_id".
+=> db.buyers.aggregate([{$group:{_id:"$address.city"}}])
+
+2. Write Mongo query to retrieve the unique zip from the buyers address as "_id".
+=> db.buyers.aggregate([{$group:{_id:"$address.zip"}}])
+
+3. Write Mongo query to retrieve the unique order_id in ascending order from the order_details.
+=> db.order_details.aggregate([{$group:{_id:"$order_id"}}, {$sort:{_id:1}}])
+
+4. Write Mongo query to retrieve the unique customer_id from the orders.
+=> db.orders.distinct("customer_id")
+
+5. Write Mongo query to retrieve the unique paymentMethod's from the payments collection as "_id".
+=> db.payments.aggregate([{$group:{_id:"$paymentMethod"}}])
+
+6. Write Mongo query to retrieve the unique paymentstatus's from the payments collection as "_id".
+=> db.payments.aggregate([{$group:{_id:"$paymentstatus"}}])
+
+7. Write Mongo query to retrieve the unique category_id product from products.
+=> db.products.distinct("category_id")
+
+8. Write Mongo query to retrieve the unique city from the suppliers city as "_id".
+=> db.suppliers.aggregate([{$group:{_id:"$city"}}])
+
+9. Write Mongo query to retrieve the first 3 buyers from the buyers collection.
+=> db.buyers.find().limit(3)
+
+10. Write Mongo query to retrieve the first order from the orders collection.
+=> db.orders.findOne()

@@ -1,0 +1,24 @@
+1. Find all orders made by customers aged 25 and above
+=> db.order.aggregate([{$lookup:{from:'customers',localField:'customerID', foreignField:'id',as:'customer'}},{$unwind:'$customer'},{$match:{'customer.age':{$gt:25}}}])
+
+2. Retrieve the details of all orders containing products with the category "jeans"
+=> db.order.aggregate([{$lookup:{from:'products',localField:'productIDs',foreignField:'id', as:'product'}},{$unwind:'$product'},{$match:{'product.categories':'jeans'}}])
+
+3. Find the average age of customers who have placed orders
+=> db.order.aggregate([{$lookup:{from:'customers',localField:'productIDs',foreignField:'id', as:'customer'}},{$unwind:'$customer'},{$group:{_id:null,averageage:{$avg:"$customer.age"}}}])
+
+4. Print the name of the customer and the number of orders he have placed
+=> db.customers.aggregate([{$lookup:{from:'order',localField:'id',foreignField:'productIDs', as:'orders'}},{$project:{_id:0,id:1,name:1,numOrder:{$size:'$orders'}}}])
+
+5 Print all the data around the products, orders and customers
+=> db.order.aggregate([{$lookup:'customers',localField:'productIDs',foreignField:'id',as:'customer'},{$unwind:"$customer"},{$lookup:'products',localField:'productIDs',foreignField:'id', as:'product'},{$unwind:'product'},{$project:{id:1,orderDate:1,customerID:'$customer.id',customerName:'$customer.name',productID:'$product.id',productName:'$product.name',productPrice:'$product.price'}}])
+
+6. Print the name of the product and the number of times it have been ordered
+=> db.order.aggregate([{$lookup:'products',localField:'productIDs',foreignField:'id',as:'product'},{$unwind:'$product'},{$group:{id:'$product.id',totalOrder:{$size:1}}},{$project:{productName:'$product.name',totalOrder:1}}])
+
+7. Print the name of the customer who have ordered more than twice
+=>db.order.aggregate([{$lookup:'customers',localField:'customerID',foreignField:'id',as:'customer'},{$unwind:'$customer'},{$match:{$sum:{'$customerID':{$gt:2}}}},{$project:{customerName:'$customer.name'}}])
+
+Find all the orders placed by customers from the "USA" for products with a price greater than $100.
+List the names and email addresses of customers who have placed orders for products priced above $50.
+Find the total revenue generated from orders placed by customers in the "USA" for products from the "Nike" brand

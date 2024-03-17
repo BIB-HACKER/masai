@@ -1,0 +1,226 @@
+Day : 9 (MongoDB - 4 , Recap , Database Design ) 
+
+Quick Recap 
+Create
+insertMany → ( [ {} , {} ] ) → Add many data in One go
+insertOne → ( {} ) → Add single data 
+Update
+updateMany → (identifier , updated_data ) → Update Many data
+updateOne → ( identifier , updataed_data ) → Update One data
+We can use - $set (values other than array) , $push , $pop , $pull , $position , $each etc.
+Delate
+delateOne → ( identifier ) → delete single data
+delateMany → ( identifier ) → delate Many data 
+Read 
+find → Get all the data
+findOne → get first data 
+find( { condition } ) → Filter
+You can use - $gt , $lt , $gte , $lte , $exist , $ne , $and , $or etc. 
+find( { } , { specific value we need } ) → get only required key value 
+Aggregation  
+$match → Filtering → { $match : { condition } }
+$limit → Limiting → { $limit : number }
+$group → Grouping Like SQL → { $group : { id : “$group_basis” } }
+You can calculate here → $sum , $max , $min , $count , $avg , $push etc. 
+$sort → Sorting Feature → { $sort : { keyName : 1 or -1 } }
+$project → Data Manupulation , Modification , Calculation , new key generation
+{ $project : { query } }
+We can also do calculation here
+$unwind → Array Flating 
+{ $unwind : “$arrayName” }
+$lookup → Joining two or more collections → from , localField , foreignField , as 
+{ $lookup : { from : “anotherCollection” , localField : “-” , foreignField : “-” , as : “-” } }
+Problem solving : 2
+Question : 1
+Retrieve a list of departments with more than 10 employees
+Approach
+Question : 2
+Find the names of employees who work in the "Finance" department and have made sales on or after "2023-09-16.
+Approach
+Question : 3
+List the names of employees who have made a sale in September 2023
+Question : 4
+You want to find out how many employees are under 30 and how many are 30 or older in each department. Create a MongoDB query that first joins the "employees" and "departments" collections, then groups employees by department and age range, and calculates the count in each group.
+Approach 
+Database Design 
+SQL Schema Design quick recap : 
+
+For more please refer this : Link
+Relational vs NoSQL : 
+SQL : 
+User
+id
+name
+city
+address
+1
+ShantiLaal
+Kolkata
+…
+2
+TappuLaal
+Pune
+…
+Profession
+id
+user_id
+profession
+1
+1
+Trader
+2
+1
+Finance
+3
+2
+SDE
+Car
+id
+user_id
+car_name
+year
+1
+1
+Supra
+2018
+2
+2
+Tesla
+2021
+MongoDB
+{
+	id : 1
+  name : "ShantiLaal"
+  "city" : "Kolkata"
+  "address" : "..."
+  "profession" : [ "Finance" , "Trader" ]
+	"car" : [ { "car_name" : "Supra" , "year" : 2018 }  ]
+}
+
+{
+	id : 1
+  name : "TappuLaal"
+  "city" : "Pune"
+  "address" : "..."
+  "profession" : [ "SDE" ]
+	"car" : [ { "car_name" : "Tesla" , "year" : 2021 }  ]
+}
+​
+Embedding vs Referencing :
+Embedding :
+Pro :
+Retrive all the data in singke query
+Avoid expenses operation - $lookup
+Con : 
+Large document size
+{
+	id : 1
+  name : "ShantiLaal"
+  "city" : "Kolkata"
+  "address" : [ 
+			 {
+         "state" : "WB",
+          "city" : "Kolkata"
+       },
+			 {
+         "state" : "KA",
+          "city" : "Bangalore"
+       }
+		
+   ]
+ 
+}
+​
+Referencing : 
+Pro : 
+Smaller Document 
+Do duplication of data 
+Con : 
+Expensive lookup operation equired to retrived all the data
+{
+	id : 1
+  name : "ShantiLaal"
+  "city" : "Kolkata"
+  "address" : [ 
+			ObjectID("sgdyd12"),
+			ObjectID("sgdyd12")
+		
+   ]
+ 
+}
+​
+Relationship :
+One to One
+
+One to few
+
+One to Many 
+
+Many To Many
+
+Example : Youtube 
+Users Collection:
+{
+  "_id": ObjectId("user_id"),
+  "username": "username",
+  "email": "user@email.com",
+  "password": "hashed_password",
+  "profile_picture": "profile_picture_url",
+  "subscribers": ["user_id_1", "user_id_2", ...],
+  "created_at": ISODate("timestamp"),
+  "last_login": ISODate("timestamp"),
+  "channels": [
+    {
+      "channel_name": "Channel Name",
+      "description": "Channel description",
+      "channel_picture": "channel_picture_url",
+      "created_at": ISODate("timestamp")
+    }
+  ]
+}
+​
+Videos Collection:
+{
+  "_id": ObjectId("video_id"),
+  "title": "video_title",
+  "description": "video_description",
+  "url": "video_url",
+  "user_id": "user_id",
+  "channel_id": "user_id's channel_id",
+  "views": 1000,
+  "likes": 500,
+  "dislikes": 50,
+  "tags": ["tag1", "tag2", ...],
+  "comments": ["comment_id_1", "comment_id_2", ...],
+  "upload_date": ISODate("timestamp"),
+}
+​
+Comments Collection : 
+{
+  "_id": ObjectId("comment_id"),
+  "text": "comment_text",
+  "user_id": "user_id",
+  "video_id": "video_id",
+  "channel_id": "user_id's channel_id",
+  "likes": 10,
+  "dislikes": 2,
+  "timestamp": ISODate("timestamp"),
+}
+​
+Subscribers collection : 
+{
+  "_id": ObjectId("subscription_id"),
+  "subscriber_id": "user_id",
+  "channel_id": "user_id's channel_id",
+  "subscribe_date": ISODate("timestamp"),
+  "subscription_status": "active or inactive"
+}
+​
+Like Collection : 
+{
+  "_id": ObjectId("like_id"),
+  "user_id": "user_id",
+  "target_id": "video_id or comment_id",
+  "type": "video or comment",
+  "like_status": "like or dislike",
+}

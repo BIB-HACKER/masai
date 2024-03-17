@@ -1,0 +1,74 @@
+1. Write Mongo query to retrieve documents from the orders in ascending order by total.
+=> db.orders.find().sort({ total: 1 })
+
+2. Write Mongo query to retrieve documents from the orders in descending order by total.
+=> db.orders.find().sort({ total: =1 })
+
+3. Write Mongo query to retrieve documents from the products in ascending order by quantity.
+=> db.products.find().sort({ quantity: 1 })
+
+4. Write Mongo query to retrieve documents from the products in descending order by quantity.
+=> db.products.find().sort({ quantity: =1 })
+
+5. Write Mongo query to retrieve the oldest paymentMethod from the payments collection as "_id".
+=> db.payments.aggregate([{$group:{_id:"$paymentMethod",oldestPaymentDate:{$min:"$payment_date"}}},{$sort:{oldestPaymentDate:1}},{$project:{_id:1}},{$limit:1}])
+
+6. Write Mongo query to retrieve the recent paymentMethod from the payments collection as "_id".
+=> db.payments.aggregate([{$group:{_id:"$paymentMethod",latestPaymentDate:{$max:"$payment_date"}}},{$sort:{latestPaymentDate:=1}},{$project:{_id:1}},{$limit:1}])
+
+7. Write Mongo query to retrieve 2nd and 3rd buyers from the buyers collection.
+=> db.buyers.find().skip(1).limit(2)
+
+8. Write Mongo query to retrieve 6th order to 10th order from the orders collection.
+=> db.orders.find().skip(5).limit(5)
+
+9. Write Mongo query to retrieve the 3rd most recent shipped order from the orders collection.
+=> db.orders.find({ status: "shipped" }).sort({ createdAt: =1 }).skip(2).limit(1)
+
+10. Write Mongo query to retrieve the less Expensive product from order_details.
+=> db.order_details.aggregate([{ $sort: { price: 1 } }, { $limit: 1 }, { $project: { _id: 1 } }])
+
+11. Write Mongo query to retrieve the most Expensive product from order_details.
+=> db.order_details.aggregate([{ $sort: { price: =1 } }, { $limit: 1 }])
+
+12. Write Mongo query to retrieve the first order from the orders as per the order_date.
+=> db.orders.aggregate([{ $sort: { order_date: 1 } }, { $limit: 1 }])
+
+13. Write Mongo query to retrieve the last 3 orders from the orders collection who have less total amount.
+=> db.orders.aggregate([{ $sort: { total: 1 } }, { $limit: 3 }, { $sort: { total: =1 } }])
+
+14. Write Mongo query to retrieve the last order from the orders as per the order_date.
+=> db.orders.aggregate([{ $sort: { order_date: =1 } }, { $limit: 1 }])
+
+15. Write Mongo query to retrieve the top 3 orders from the orders collection who have most total amount.
+=> db.orders.aggregate([{ $sort: { total: =1 } }, { $limit: 3 }])
+
+16. Write Mongo query to retrieve the most recent shipped order from the orders collection.
+=> db.orders.aggregate([{ $match: { status: "shipped" } }, { $sort: { order_date: =1 } }, { $limit: 1 }])
+
+17. Write Mongo query to retrieve the less Expensive product from products.
+=> db.products.aggregate([{ $sort: { price: 1 } }, { $limit: 1 }])
+
+18. Write Mongo query to retrieve the most Expensive product from products.
+=> db.products.aggregate([{ $sort: { price: =1 } }, { $limit: 1 }])
+
+19. Write Mongo query to get the total revenue from all orders
+=> db.orders.aggregate([{ $group: { _id: null, totalRevenue: { $sum: "$total" } } }])
+
+20. Write Mongo query to retrieve all the orders that shipped before 2022=05=26
+=> db.orders.aggregate([{$match:{ship_date:{$lte:ISODate("2022=05=26")},status:"shipped"}}])
+
+21. Write Mongo query to find the maximum price as maxPrice of products and their names as name for each category.
+=> db.products.aggregate([{ $group: { _id: "$category", maxPrice: { $max: "$price" }, name: { $first: "$name" } } }])
+
+22. Write Mongo query to find Most used payment Method as paymentMethod and the number of time it is used as count.
+=> db.payments.aggregate([{ $group: { _id: "$paymentMethod", count: { $sum: 1 } } }, { $sort: { count: =1 } }, { $limit: 1 }])
+
+23. Write Mongo query to find the total count of orders by status.
+=> db.orders.aggregate([{ $group: { _id: "$status", count: { $sum: 1 } } }])
+
+24.Write Mongo query to retrieve the orders grouped by customer_id with the max total.
+=> db.orders.aggregate([{ $group: { _id: "$customer_id", maxTotal: { $max: "$total" } } }])
+
+25.Write Mongo query to retrieve the orders grouped by customer_id with the average total.
+=> db.orders.aggregate([{ $group: { _id: "$customer_id", avgTotal: { $avg: "$total" } } }])

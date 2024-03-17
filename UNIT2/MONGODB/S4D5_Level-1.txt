@@ -1,0 +1,36 @@
+1. Figure Out those students with name starts with capital "S"
+=> db.Students.find({name:{$regex:/^S/}})
+
+2. Figure Out those students whose phone number starts with 9
+=> db.Students.find({phone:{$regex:'^9'}})
+
+3. Figure Out those students whose coursename have the word "Science"
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.courseName":{$regex:/Science/}}},{$project:{_id:0,studenName:"$name"}}])
+
+4. Figure out students who are taught by "Professor Johnson"
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.instructor":"Professor Johnson"}},{$project:{_id:0,name:1}}])
+
+5. Figure all the courses and the number of students who are in that course
+=> db.Students.aggregate([{$group:{_id:"$courseID",numStudents:{$sum: 1}}},{$lookup:{from:"Courses",localField:"_id",foreignField:"courseID",as:"course"}},
+   {$unwind:"$course"},{$project:{_id:0,courseName:"$course.courseName",numStudents:1}}])
+   
+6. Figure Out those students whose coursename have the word "Physics"
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.courseName":{$regex:/Physics/i}}},{$project:{_id:0,studenName:"$name",coursename:"$course.courseName"}}])
+
+7. Figure Out those students who study on Mondays
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.schedule":{$regex:/Monday/}}},{$project:{_id:0,studenName:"$name"}}])
+
+8. Figure Out those students who study at 9:00PM
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.schedule":{$regex:/9:00PM/}}},{$project:{_id:0,studenName:"$name"}}])
+
+9. Figure out students who are taught by teacher whose lastname is "Davis"
+=> db.Students.aggregate([{$lookup:{from:"Courses",localField:"courseID",foreignField:"courseID",as:"course"}},{$unwind:"$course"},
+   {$match:{"course.instructor":{$regex:/Davis/}}},{$project:{_id:0,studenName:"$name"}}])
+
+10. Figure Out those students whose phone number starts with 1
+=> db.Students.find({phone:{$regex:/^1/}})

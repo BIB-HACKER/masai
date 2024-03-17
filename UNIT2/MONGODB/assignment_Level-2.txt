@@ -1,0 +1,99 @@
+1. Write a MongoDB query to find all documents where "Swimming" is one of the hobbies.
+
+=> db.users.find({hobbies:"Swimming"})
+
+2. Write a MongoDB query to find all documents where "Reading" or "Gaming" is one of the hobbies
+
+=> db.users.find({$or:[{hobbies:"Reading"},{hobbies:"Gaming"}]})
+
+3. Write a MongoDB query to find all documents where "Hiking" or "Photography" is one of the hobbies.
+
+=> db.users.find({$or:[{hobbies:"Hiking"},{hobbies:"Photography"}]})
+
+4. Write a MongoDB query to find all documents where the "state" field within the "address" object is equal to "CA."
+
+=> db.users.find({"address.state":"CA"})
+
+5. Write a MongoDB query to find all documents where the "city" field within the "address" object is not equal to "New York."
+
+=> db.users.find({"address.city":{$ne:"New York"}})
+
+6. Write a MongoDB query to find all documents where the "zipcode" field within the "address" object is not equal to "54321."
+
+=> db.users.find({"address.zipcode":{$ne:"54321"}})
+
+7. Write a MongoDB query to find all documents where the "region" field within the "address" object exists.
+
+=> db.users.find({"address.region":{$exists:true}})
+
+8. Write a MongoDB query to find all documents where the sum of expenses is greater than or equal to 1500.
+
+=> db.users.aggregate([{$group:{_id:null,expenses:{$sum:"$expenses"}}},{$match:{expenses:{$gte:1500}}}])
+
+9. Write a MongoDB query to find all documents where the sum of "zipcode" values within the "address" object is greater than or equal to 50000.
+
+=> db.users.aggregate([{$group:{_id:null,zipcode:{$sum:"$address.zipcode"}}},{$match:{zipcode:{$gte:50000}}}])
+
+10. Write a MongoDB update query to push a new hobby "Swimming" into the "hobbies" array for the document where "name" is "Alice.
+
+=> db.users.updateOne({name:"Alice"},{$push:{hobbies:"Swimming"}})
+
+11. Write a MongoDB update query to push a new hobby "Hiking" into the "hobbies" array for the document where "name" is "Boby".
+
+=> db.users.updateOne({name:"Boby"},{$push:{hobbies:"Hiking"}}) 
+
+12. Write a MongoDB update query to push a new hobby "Dancing" into the "hobbies" array for the document where "name" is "Carol".
+
+=> db.users.updateOne({name:"Carol"},{$push:{hobbies:"Dancing"}})
+
+13. Write a MongoDB update query to pop the last hobby from the "hobbies" array for the document where "name" is "David."
+
+=> db.users.updateOne({name:"David"},{$pop:{hobbies:1}})
+
+14. Write a MongoDB update query to pop the first hobby from the "hobbies" array for the document where "name" is "Hank."
+
+=> db.users.updateOne({name:"Hank"},{$pop:{hobbies:-1}})
+
+15. Write a MongoDB update query to pop the hobby "Coding" from the "hobbies" array for the document where "name" is "Francis."
+
+=> db.users.updateOne({name:"Francis"},{$pull:{hobbies:"Coding"}})
+
+16. Write a MongoDB update query to change the value at index 1 of the "hobbies" array to "Cooking" for the document where "name" is "Alice."
+
+=> db.users.updateOne({name:"Alice"},{$set:{"hobbies.1":"Cooking"}})
+
+17. Write a MongoDB update query to change the value at index 0 of the "hobbies" array to "Soccer" for the document where "name" is "Hank."
+
+=> db.users.updateOne({name:"Hank"},{$set:{"hobbies.0":"Soccer"}})
+
+18. Write a MongoDB update query to change the value at index 2 of the "hobbies" array to "Gaming" for the document where "name" is "David."
+
+=> db.users.updateOne({name:"David"},{$set:{"hobbies.2":"Gaming"}})
+
+19. Write a MongoDB update query to add a new key-value pair "country: USA" to the "address" object for the document where "name" is "Alice."
+
+=> db.users.updateOne({name:"Alice"},{$set:{"address.country":"USA"}})
+
+20. Write a MongoDB update query to add a new key-value pair "postalCode: 54321" to the "address" object for the document where "name" is "David."
+
+=> db.users.updateOne({name:"David"},{$set:{"address.postalCode":54321}})
+
+21. Write a MongoDB update query to add a new key-value pair "region: West" to the "address" object for the document where "name" is "Eva."
+
+=> db.users.updateOne({name:"Eva"},{$set:{"address.region":"West"}})
+
+22. Write a MongoDB update query to change the value of the "state" field in the "address" object to "MA" for the document where "name" is "Alice."
+
+=> db.users.updateOne({name:"Alice"},{$set:{"address.state":"MA"}})
+
+23. Write a MongoDB update query to change the value of the "zipcode" field in the "address" object to "54321" for the document where "name" is "David."
+
+=> db.users.updateOne({name:"David"},{$set:{"address.zipcode":"54321"}})
+
+24. Write a MongoDB update query to change the value of the "city" field in the "address" object to "Techville" for the document where "name" is "Eva."
+
+=> db.users.updateOne({name:"Eva"},{$set:{"address.city":"Techville"}})
+
+25. Write a MongoDB update query to change the value of the "city" field in the "address" object to "New City" for the document where "name" is "Francis.
+
+=> db.users.updateOne({name:"Francis"},{$set:{"address.city":"New City"}})
