@@ -1,0 +1,1021 @@
+Date,ProductID,ProductName,Category,Quantity,Price,TotalSales,StoreLocation
+2023-06-22,5,ProductA,Clothing,5,,315.87,
+2023-02-17,23,ProductD,Home & Kitchen,5,25.99,257.71,New York
+2023-04-28,30,ProductD,Electronics,4,20.99,130.63,Chicago
+2023-07-12,39,ProductD,Clothing,2,10.99,276.87,New York
+2023-11-20,12,,Sports,2,30.99,51.66,Los Angeles
+2023-09-09,15,ProductD,Home & Kitchen,3,15.99,285.78,Los Angeles
+2023-07-15,19,ProductC,Home & Kitchen,1,25.99,430.14,
+2023-12-26,26,ProductA,,2,,87.67,Chicago
+2023-01-10,45,ProductB,Electronics,2,30.99,176.17,Chicago
+2023-07-31,4,ProductB,Electronics,4,10.99,322.94,Los Angeles
+2023-10-05,38,,Sports,,10.99,192.46,Houston
+2023-08-31,8,ProductA,Home & Kitchen,2,15.99,219.2,New York
+2023-10-20,30,ProductA,Electronics,5,15.99,182.46,Los Angeles
+2023-03-29,15,ProductB,Electronics,2,,251.68,New York
+2023-03-12,12,,,2,20.99,199.13,
+2023-03-30,10,ProductC,Sports,1,10.99,89.24,Los Angeles
+2023-11-11,12,ProductA,Sports,5,25.99,115.43,
+2023-07-13,17,ProductB,Electronics,3,,58.04,Houston
+2023-02-09,40,ProductC,Clothing,5,10.99,244.48,Houston
+2023-03-29,2,ProductC,,3,,425.79,Chicago
+2023-06-24,19,ProductC,Clothing,1,10.99,63.46,
+2023-03-30,29,ProductD,,1,20.99,336.19,Los Angeles
+2023-12-04,1,ProductC,Clothing,,,221.71,New York
+2023-06-15,22,ProductC,Sports,,,438.26,New York
+2023-01-26,25,ProductB,Home & Kitchen,4,10.99,194.39,
+2023-11-30,10,,Sports,1,,353.33,Los Angeles
+2023-03-14,9,ProductD,Electronics,2,25.99,211.57,Chicago
+2023-09-23,19,ProductB,Clothing,5,20.99,280.14,Houston
+2023-04-26,12,ProductB,Electronics,3,10.99,391.97,Houston
+2023-09-01,29,ProductC,Sports,5,15.99,484.57,Chicago
+2023-07-17,18,ProductD,Clothing,5,30.99,84.75,Los Angeles
+2023-12-02,16,,,5,10.99,273.97,New York
+2023-12-05,4,,Home & Kitchen,5,25.99,83.49,New York
+2023-04-10,43,ProductB,Sports,5,25.99,34.64,New York
+2023-06-27,25,ProductD,Sports,,15.99,379.02,Los Angeles
+2023-09-01,22,ProductB,Home & Kitchen,1,10.99,491.97,Los Angeles
+2023-10-13,29,ProductB,Sports,,10.99,305.79,
+2023-05-28,22,,Clothing,5,10.99,54.77,
+2023-05-28,15,,Clothing,5,25.99,49.63,Chicago
+2023-10-16,48,ProductB,Sports,3,20.99,170.98,Chicago
+2023-09-23,2,,Clothing,5,20.99,202.82,New York
+2023-07-05,13,,Sports,5,15.99,21.86,Los Angeles
+2023-05-08,12,ProductC,Sports,,25.99,424.49,
+2023-02-02,26,ProductC,,5,30.99,244.92,New York
+2023-02-01,40,ProductA,Home & Kitchen,2,,497.94,
+2023-07-22,12,ProductA,Clothing,,15.99,444.39,Los Angeles
+2023-09-02,27,ProductB,Home & Kitchen,2,20.99,260.37,Los Angeles
+2023-06-01,46,ProductB,,2,30.99,320.99,Chicago
+2023-06-13,35,ProductB,Electronics,5,15.99,170.98,Los Angeles
+2023-07-03,2,ProductB,Sports,1,15.99,165.61,Los Angeles
+2023-01-29,17,,Clothing,2,25.99,82.5,New York
+2023-10-18,2,ProductA,Electronics,4,10.99,281.79,Los Angeles
+2023-05-09,17,ProductB,Electronics,2,20.99,59.2,Houston
+2023-05-09,34,ProductC,Clothing,3,20.99,234.49,New York
+2023-02-23,34,,Electronics,1,10.99,174.43,Chicago
+2023-02-08,45,ProductA,Sports,,30.99,399.46,New York
+2023-09-02,39,,Sports,3,30.99,203.09,New York
+2023-10-01,41,ProductD,Sports,3,30.99,452.72,Los Angeles
+2023-12-02,9,ProductB,,2,10.99,110.97,New York
+2023-04-16,14,ProductC,Electronics,3,25.99,466.66,
+2023-02-12,43,ProductA,Sports,3,25.99,304.78,Houston
+2023-02-01,20,,,1,,77.72,
+2023-09-15,33,ProductA,Sports,2,15.99,261.03,Chicago
+2023-11-18,24,ProductD,Sports,1,20.99,148.6,Houston
+2023-02-27,5,ProductC,Clothing,5,10.99,379.54,Los Angeles
+2023-10-19,32,,Sports,2,25.99,332.63,Houston
+2023-12-25,23,ProductD,Sports,3,20.99,50.11,Los Angeles
+2023-04-30,1,ProductC,Sports,,,220.42,New York
+2023-09-25,38,ProductB,Sports,2,30.99,445.83,Los Angeles
+2023-03-24,32,ProductA,Sports,,10.99,215.76,Chicago
+2023-04-02,16,ProductD,Home & Kitchen,2,20.99,376.94,
+2023-04-10,20,ProductA,Home & Kitchen,5,25.99,74.42,Houston
+2023-02-23,16,ProductA,,1,30.99,436.12,
+2023-05-02,13,ProductD,,2,,261.17,
+2023-03-26,46,ProductD,,,15.99,474.83,
+2023-07-23,11,,Home & Kitchen,2,15.99,277.91,
+2023-11-21,42,ProductC,,,15.99,389.23,New York
+2023-09-20,17,ProductB,Clothing,4,25.99,486.61,Chicago
+2023-02-17,7,ProductC,Electronics,2,10.99,370.09,Chicago
+2023-05-08,22,ProductB,Clothing,1,,297.09,Los Angeles
+2023-05-12,31,ProductB,Electronics,4,,196.02,Los Angeles
+2023-12-23,4,,Electronics,,,40.41,Los Angeles
+2023-06-30,17,ProductC,Sports,3,20.99,227.62,Chicago
+2023-12-01,1,ProductD,,3,25.99,217.99,Chicago
+2023-05-24,2,ProductA,Electronics,2,20.99,415.07,Chicago
+2023-05-29,33,,Sports,1,25.99,110.84,Los Angeles
+2023-08-16,44,,Clothing,2,30.99,376.47,New York
+2023-10-07,19,,Sports,3,25.99,38.03,
+2023-07-27,19,ProductD,Electronics,2,15.99,445.46,Chicago
+2023-12-08,23,ProductA,Sports,2,10.99,340.61,Chicago
+2023-02-18,16,ProductB,Sports,3,20.99,222.77,Houston
+2023-11-02,16,ProductD,Clothing,3,30.99,147.44,Chicago
+2023-03-11,29,ProductC,Clothing,4,15.99,108.51,
+2023-06-19,8,ProductC,Electronics,4,,301.11,Los Angeles
+2023-06-13,28,ProductD,Sports,1,30.99,216.91,Houston
+2023-04-06,25,,Home & Kitchen,,20.99,376.65,
+2023-07-17,25,ProductD,Sports,,25.99,455.25,New York
+2023-04-05,13,ProductA,Electronics,1,10.99,161.91,
+2023-09-14,14,ProductB,Home & Kitchen,3,15.99,331.95,Chicago
+2023-06-28,19,ProductB,Sports,1,10.99,222.91,Los Angeles
+2023-10-20,15,ProductB,Clothing,1,20.99,40.51,
+2023-11-01,15,ProductB,Electronics,4,,315.41,Houston
+2023-12-16,21,,Sports,3,30.99,194.58,
+2023-04-09,8,ProductC,Clothing,4,10.99,26.59,Houston
+2023-02-12,45,ProductC,Electronics,2,30.99,246.69,Houston
+2023-07-21,44,ProductD,Home & Kitchen,3,10.99,64.0,
+2023-01-01,28,ProductB,Home & Kitchen,5,20.99,321.52,Houston
+2023-02-13,45,ProductC,Electronics,1,,272.72,Los Angeles
+2023-01-24,16,ProductA,Clothing,1,30.99,260.17,Chicago
+2023-07-07,24,ProductD,Home & Kitchen,3,10.99,469.7,New York
+2023-05-11,12,,Electronics,5,10.99,442.61,
+2023-04-09,14,ProductC,Sports,,20.99,362.69,Houston
+2023-03-04,30,ProductB,Electronics,3,30.99,297.22,Chicago
+2023-08-11,32,,Electronics,1,10.99,141.14,Houston
+2023-05-04,47,ProductA,Electronics,,,23.92,Chicago
+2023-03-24,19,ProductA,Clothing,1,15.99,77.42,
+2023-08-16,5,ProductA,,3,20.99,173.74,Houston
+2023-05-29,29,,Sports,,10.99,114.43,New York
+2023-07-29,2,ProductC,Clothing,2,20.99,293.6,New York
+2023-02-20,24,ProductC,Electronics,4,25.99,276.78,
+2023-09-28,17,ProductB,Sports,3,10.99,207.1,Houston
+2023-02-11,42,,Clothing,2,15.99,404.26,
+2023-02-28,27,ProductC,Home & Kitchen,5,,370.96,Chicago
+2023-07-13,49,ProductD,Sports,1,25.99,350.18,
+2023-02-06,3,ProductB,,1,20.99,261.28,New York
+2023-09-24,48,ProductC,,3,,40.85,Los Angeles
+2023-03-28,18,ProductD,Sports,5,30.99,225.45,Houston
+2023-02-13,21,ProductB,Sports,3,30.99,259.61,Los Angeles
+2023-12-27,39,ProductA,Electronics,4,20.99,234.97,New York
+2023-01-12,1,ProductA,Electronics,3,30.99,22.15,Los Angeles
+2023-09-16,7,ProductD,Electronics,1,30.99,333.17,Chicago
+2023-11-04,45,ProductA,Sports,1,15.99,143.55,Los Angeles
+2023-03-22,23,ProductD,,,25.99,41.44,
+2023-02-02,16,ProductB,Home & Kitchen,2,10.99,261.66,New York
+2023-07-02,11,ProductC,,4,25.99,461.86,Houston
+2023-05-09,35,ProductB,Electronics,,20.99,34.13,New York
+2023-10-22,41,ProductD,Clothing,,15.99,26.6,
+2023-10-03,39,,,,,302.12,New York
+2023-06-24,22,,Electronics,2,20.99,280.63,Los Angeles
+2023-02-12,35,ProductD,Sports,4,25.99,27.54,Los Angeles
+2023-07-04,33,ProductA,Home & Kitchen,1,15.99,69.47,Chicago
+2023-03-19,43,ProductD,Clothing,,15.99,421.47,
+2023-10-14,45,ProductC,,,25.99,237.27,
+2023-10-08,36,ProductB,Electronics,,,79.71,Houston
+2023-05-06,42,ProductD,,3,10.99,94.84,Houston
+2023-09-16,40,ProductC,Home & Kitchen,1,,313.48,Houston
+2023-01-04,28,,Clothing,2,,177.76,
+2023-04-05,49,ProductD,,2,25.99,32.34,Chicago
+2023-08-15,11,ProductA,Home & Kitchen,3,15.99,325.29,Houston
+2023-12-30,5,ProductD,Clothing,,15.99,35.53,Los Angeles
+2023-09-27,18,,,5,10.99,72.93,Houston
+2023-10-24,4,ProductC,Electronics,1,10.99,96.21,Houston
+2023-11-25,38,ProductD,Home & Kitchen,2,20.99,88.77,
+2023-01-20,31,ProductD,Electronics,5,20.99,385.55,New York
+2023-04-06,24,ProductA,Home & Kitchen,5,15.99,64.85,New York
+2023-11-25,30,ProductD,Electronics,1,20.99,91.35,Los Angeles
+2023-09-06,39,ProductB,Electronics,2,10.99,234.57,Houston
+2023-06-30,31,ProductD,,5,,87.24,Los Angeles
+2023-11-20,12,ProductC,,2,20.99,378.53,Los Angeles
+2023-11-14,3,ProductB,Electronics,5,20.99,254.12,Houston
+2023-09-28,30,ProductA,Home & Kitchen,1,15.99,442.23,Los Angeles
+2023-12-19,8,ProductC,,1,25.99,38.3,Los Angeles
+2023-09-18,10,ProductA,,2,25.99,430.5,Chicago
+2023-08-26,24,ProductD,Electronics,1,30.99,93.83,Los Angeles
+2023-05-20,1,ProductD,Home & Kitchen,4,30.99,464.3,New York
+2023-03-28,49,ProductD,Electronics,1,,176.5,Chicago
+2023-04-20,18,,Sports,3,15.99,265.18,
+2023-11-28,41,,Electronics,1,15.99,31.37,Houston
+2023-07-04,22,,Home & Kitchen,2,,369.99,
+2023-01-17,31,ProductB,,,25.99,122.61,Houston
+2023-06-02,27,,,5,15.99,459.98,Chicago
+2023-05-30,16,ProductD,Clothing,4,10.99,337.66,
+2023-04-21,49,ProductD,Electronics,2,15.99,156.14,New York
+2023-01-26,18,ProductA,,2,20.99,145.24,Los Angeles
+2023-04-28,11,ProductC,Sports,5,15.99,101.83,Houston
+2023-03-25,18,ProductC,,5,25.99,404.9,
+2023-06-11,4,ProductB,Sports,3,10.99,230.47,Houston
+2023-12-27,40,ProductC,,2,30.99,152.93,Los Angeles
+2023-08-17,10,ProductB,,4,10.99,477.35,Chicago
+2023-09-09,30,ProductA,Home & Kitchen,3,10.99,405.08,Chicago
+2023-05-02,4,ProductD,,3,20.99,301.43,New York
+2023-11-23,8,ProductD,Sports,4,10.99,405.18,New York
+2023-10-15,17,ProductB,Home & Kitchen,5,15.99,77.66,Chicago
+2023-01-14,35,,,5,25.99,342.64,Houston
+2023-11-24,5,ProductA,Home & Kitchen,2,10.99,175.59,Houston
+2023-07-04,27,ProductD,,3,10.99,350.0,Houston
+2023-06-02,37,ProductD,Clothing,4,15.99,481.6,Houston
+2023-03-21,7,ProductA,Home & Kitchen,4,,394.57,Los Angeles
+2023-02-11,33,ProductB,Sports,4,10.99,291.47,Chicago
+2023-10-02,18,,Clothing,3,30.99,377.86,
+2023-02-10,38,ProductB,,1,10.99,244.8,Chicago
+2023-07-27,28,ProductA,,1,10.99,154.37,New York
+2023-09-25,15,ProductC,Clothing,2,10.99,39.5,Houston
+2023-06-16,23,ProductB,Electronics,,30.99,345.06,Chicago
+2023-04-22,32,ProductC,Clothing,3,30.99,88.44,Houston
+2023-12-16,9,ProductA,Sports,,30.99,240.49,Houston
+2023-05-10,30,ProductC,,3,30.99,340.04,Los Angeles
+2023-08-12,29,ProductD,Home & Kitchen,1,10.99,447.82,Los Angeles
+2023-10-28,32,ProductC,Electronics,5,15.99,312.49,Houston
+2023-08-05,35,,Home & Kitchen,1,25.99,124.51,Chicago
+2023-01-25,18,,Clothing,,25.99,247.55,
+2023-03-09,29,ProductA,,3,10.99,340.46,Los Angeles
+2023-09-17,48,,Sports,,20.99,113.75,
+2023-08-23,17,ProductC,Clothing,4,25.99,371.44,
+2023-07-24,9,ProductD,Clothing,3,30.99,386.64,Houston
+2023-10-19,45,ProductA,Home & Kitchen,2,20.99,270.81,Los Angeles
+2023-08-03,8,ProductB,Home & Kitchen,1,15.99,432.22,Houston
+2023-07-09,13,ProductD,,2,,127.88,Los Angeles
+2023-07-17,33,ProductB,Home & Kitchen,1,20.99,278.11,New York
+2023-08-04,21,ProductA,Electronics,1,15.99,449.2,Chicago
+2023-02-13,44,ProductB,,2,20.99,357.99,New York
+2023-02-02,12,ProductD,Sports,2,25.99,407.3,Chicago
+2023-01-12,30,,Electronics,4,30.99,126.6,Chicago
+2023-04-15,41,ProductA,Clothing,,15.99,294.93,Chicago
+2023-08-01,1,,Home & Kitchen,2,15.99,175.54,Los Angeles
+2023-05-19,21,,Sports,5,20.99,336.28,Los Angeles
+2023-07-02,46,,,3,30.99,270.85,Chicago
+2023-05-06,29,ProductD,Home & Kitchen,,10.99,320.23,New York
+2023-06-06,14,ProductC,Electronics,4,15.99,316.48,
+2023-04-22,38,,Clothing,1,30.99,373.49,Chicago
+2023-09-16,48,ProductC,Clothing,,10.99,403.46,
+2023-01-28,40,ProductA,Home & Kitchen,5,15.99,49.7,New York
+2023-08-06,5,ProductB,,2,30.99,475.22,
+2023-06-01,47,,,2,,215.09,Los Angeles
+2023-11-06,13,ProductC,Home & Kitchen,5,15.99,101.65,New York
+2023-11-04,38,ProductA,Home & Kitchen,3,25.99,462.55,Los Angeles
+2023-06-24,49,ProductD,Home & Kitchen,5,30.99,396.32,
+2023-05-29,5,ProductA,Sports,1,20.99,221.77,Houston
+2023-01-30,42,ProductD,Home & Kitchen,,20.99,307.96,New York
+2023-03-09,37,ProductB,Sports,5,,128.57,Houston
+2023-02-05,17,ProductB,Electronics,,10.99,218.3,Chicago
+2023-10-23,19,ProductC,Home & Kitchen,4,25.99,212.45,Houston
+2023-03-15,38,ProductD,Home & Kitchen,5,,381.94,Los Angeles
+2023-10-25,31,ProductD,,5,10.99,227.23,Los Angeles
+2023-10-30,47,ProductB,Home & Kitchen,1,20.99,382.34,
+2023-08-07,36,ProductA,Sports,1,30.99,399.24,
+2023-12-31,49,ProductA,Sports,3,,205.1,Chicago
+2023-09-17,1,ProductC,Home & Kitchen,1,25.99,231.23,Los Angeles
+2023-10-15,10,ProductB,Sports,1,15.99,269.94,New York
+2023-09-23,34,ProductB,Home & Kitchen,1,,21.69,Chicago
+2023-01-28,49,,Electronics,5,,113.63,Houston
+2023-07-19,13,ProductC,Sports,5,15.99,426.63,New York
+2023-03-03,7,ProductB,Sports,1,30.99,385.25,Chicago
+2023-12-08,37,,Sports,2,20.99,57.03,Houston
+2023-12-20,36,ProductD,Sports,1,,324.75,New York
+2023-02-14,39,,Home & Kitchen,1,,29.95,
+2023-10-18,37,ProductB,Home & Kitchen,,10.99,276.42,Los Angeles
+2023-03-30,31,ProductA,Electronics,3,20.99,97.51,Houston
+2023-02-03,20,ProductC,Home & Kitchen,1,30.99,429.66,Los Angeles
+2023-05-14,39,ProductD,Sports,1,20.99,315.11,Houston
+2023-08-21,45,ProductA,Electronics,,10.99,50.71,Los Angeles
+2023-09-13,36,ProductC,Clothing,3,10.99,327.8,Houston
+2023-02-06,15,ProductD,,1,25.99,448.26,Los Angeles
+2023-09-14,30,ProductD,Electronics,1,,372.18,
+2023-10-18,18,ProductB,,4,25.99,75.3,Los Angeles
+2023-07-17,4,,Sports,,25.99,339.24,Houston
+2023-09-12,30,ProductA,Clothing,3,,313.14,Los Angeles
+2023-03-22,28,,,3,20.99,323.05,Los Angeles
+2023-05-17,4,ProductB,Electronics,4,,401.68,Chicago
+2023-07-09,34,ProductB,Home & Kitchen,3,15.99,166.12,Houston
+2023-05-10,28,ProductA,,,20.99,190.62,Los Angeles
+2023-07-29,37,ProductD,Home & Kitchen,2,,116.87,Houston
+2023-10-19,22,ProductC,,5,10.99,239.44,Chicago
+2023-12-14,40,ProductD,Sports,5,25.99,216.72,Houston
+2023-06-18,43,,Home & Kitchen,,30.99,60.37,Houston
+2023-10-20,11,ProductA,Clothing,3,15.99,136.45,Houston
+2023-06-26,30,ProductB,Electronics,5,20.99,77.57,New York
+2023-01-26,30,ProductD,Clothing,1,15.99,286.16,Los Angeles
+2023-11-20,25,ProductA,,1,30.99,109.89,New York
+2023-12-26,17,ProductC,,2,,176.29,Los Angeles
+2023-10-19,1,ProductB,Clothing,4,25.99,412.19,Los Angeles
+2023-04-25,37,ProductD,,,25.99,294.49,Chicago
+2023-10-14,35,ProductB,Sports,5,10.99,269.4,New York
+2023-01-30,14,,Electronics,2,,473.29,New York
+2023-08-30,2,ProductC,Sports,5,,229.93,
+2023-10-17,3,ProductC,Home & Kitchen,1,20.99,444.15,Chicago
+2023-05-27,3,ProductC,Electronics,2,10.99,297.37,Los Angeles
+2023-10-01,20,,Electronics,,15.99,214.56,Los Angeles
+2023-08-10,13,ProductD,,2,30.99,186.11,
+2023-12-07,31,ProductD,Home & Kitchen,4,,453.62,Los Angeles
+2023-01-03,40,ProductD,Clothing,1,30.99,291.32,New York
+2023-03-11,22,ProductD,Home & Kitchen,2,,140.82,
+2023-12-24,14,ProductD,Clothing,1,10.99,269.35,
+2023-02-14,27,ProductA,Home & Kitchen,1,10.99,139.89,Los Angeles
+2023-09-11,13,,Home & Kitchen,3,15.99,135.52,Los Angeles
+2023-11-19,1,ProductC,Clothing,3,25.99,81.99,
+2023-04-22,2,ProductD,Sports,4,30.99,350.87,New York
+2023-04-02,37,ProductD,,1,,394.9,Los Angeles
+2023-12-08,11,ProductC,,3,,175.33,Los Angeles
+2023-02-09,43,ProductC,,,10.99,216.46,
+2023-05-31,33,ProductA,Clothing,,,400.67,Chicago
+2023-05-26,29,,,5,30.99,27.83,New York
+2023-07-18,3,ProductB,Electronics,1,25.99,179.76,Los Angeles
+2023-10-02,29,ProductA,Home & Kitchen,2,30.99,167.65,Los Angeles
+2023-12-15,2,ProductB,Clothing,1,25.99,280.86,Chicago
+2023-02-13,14,ProductA,Clothing,2,25.99,449.54,Los Angeles
+2023-03-25,20,,Electronics,4,20.99,39.45,Houston
+2023-10-25,48,,Home & Kitchen,3,15.99,424.53,
+2023-04-04,18,ProductB,,5,30.99,287.42,Los Angeles
+2023-06-24,37,ProductD,Clothing,3,25.99,302.08,Houston
+2023-07-21,8,ProductD,Clothing,,30.99,479.34,Los Angeles
+2023-12-12,7,ProductD,Clothing,2,10.99,81.58,
+2023-11-26,10,ProductB,Clothing,,15.99,152.79,Houston
+2023-01-29,16,ProductD,Clothing,4,15.99,130.42,Houston
+2023-07-29,19,ProductC,Clothing,2,10.99,245.04,
+2023-04-16,30,ProductC,Electronics,,10.99,298.32,Chicago
+2023-03-05,43,,Clothing,4,30.99,369.37,Chicago
+2023-01-17,19,ProductB,Sports,,20.99,45.46,
+2023-04-17,3,ProductD,Home & Kitchen,4,30.99,224.54,Los Angeles
+2023-06-14,30,ProductC,Home & Kitchen,,30.99,463.65,New York
+2023-04-05,18,ProductD,,5,25.99,242.04,Los Angeles
+2023-01-25,36,ProductA,Clothing,5,30.99,412.46,Houston
+2023-04-27,20,ProductD,Clothing,3,15.99,73.75,New York
+2023-07-11,17,,Electronics,5,,159.05,Houston
+2023-07-15,24,ProductA,Sports,2,20.99,372.99,Houston
+2023-11-04,13,ProductB,Home & Kitchen,2,10.99,318.25,
+2023-05-17,36,ProductD,Home & Kitchen,,15.99,232.71,Chicago
+2023-12-14,46,ProductD,,,10.99,341.08,Chicago
+2023-04-04,3,ProductA,Clothing,4,25.99,390.06,Chicago
+2023-08-27,21,,Electronics,3,30.99,450.8,Chicago
+2023-03-29,4,,,,25.99,231.37,New York
+2023-06-10,18,,,3,10.99,328.45,Chicago
+2023-05-28,45,ProductB,,3,30.99,203.1,
+2023-03-14,39,ProductA,Electronics,4,,464.98,Los Angeles
+2023-03-29,43,ProductC,Electronics,5,,250.73,Houston
+2023-01-14,11,ProductB,Clothing,1,30.99,217.05,Los Angeles
+2023-11-11,38,,Electronics,2,25.99,470.95,New York
+2023-03-23,43,,,4,10.99,20.94,
+2023-05-01,41,ProductD,Clothing,2,20.99,179.35,Houston
+2023-11-17,48,ProductB,,5,25.99,422.34,New York
+2023-07-23,28,ProductA,,5,15.99,236.7,
+2023-08-09,5,,Home & Kitchen,4,15.99,187.23,Houston
+2023-10-09,23,ProductC,Electronics,4,15.99,302.15,Chicago
+2023-10-16,38,ProductD,Home & Kitchen,1,10.99,214.24,Houston
+2023-09-28,36,ProductA,Home & Kitchen,3,15.99,178.16,New York
+2023-10-12,31,ProductA,,1,15.99,147.67,New York
+2023-10-04,8,ProductA,Electronics,4,30.99,170.26,Houston
+2023-11-21,25,ProductD,,1,30.99,463.6,
+2023-01-23,25,ProductC,Sports,,30.99,480.64,
+2023-08-16,48,,,,10.99,67.44,Chicago
+2023-03-25,16,ProductD,,,15.99,373.0,New York
+2023-05-16,11,ProductD,Electronics,2,25.99,335.73,Chicago
+2023-03-03,20,ProductC,,5,15.99,322.86,Chicago
+2023-05-22,14,ProductA,,5,30.99,35.76,
+2023-01-06,40,,Home & Kitchen,1,,151.26,Chicago
+2023-09-14,38,ProductB,,,15.99,378.13,Los Angeles
+2023-05-17,40,ProductA,Electronics,3,30.99,257.99,Chicago
+2023-07-27,19,ProductA,Home & Kitchen,4,15.99,31.47,Chicago
+2023-05-20,8,ProductC,Clothing,5,,272.73,New York
+2023-01-05,25,ProductB,Clothing,1,10.99,426.95,Houston
+2023-12-15,33,,,4,20.99,441.64,Chicago
+2023-10-10,45,,Home & Kitchen,5,20.99,451.34,Chicago
+2023-03-16,40,,Sports,,15.99,273.12,Houston
+2023-11-05,41,ProductC,Clothing,1,25.99,244.14,New York
+2023-08-08,48,ProductB,Home & Kitchen,4,15.99,137.29,New York
+2023-11-04,37,ProductB,Clothing,3,,435.72,Los Angeles
+2023-08-16,43,ProductA,Home & Kitchen,1,15.99,403.93,
+2023-12-28,17,ProductD,,1,20.99,434.52,New York
+2023-10-02,27,ProductB,Home & Kitchen,1,15.99,128.45,New York
+2023-10-18,41,,Home & Kitchen,5,15.99,66.99,Los Angeles
+2023-02-21,17,,Electronics,3,30.99,355.25,Houston
+2023-06-08,47,ProductD,,,15.99,458.31,New York
+2023-11-11,33,ProductD,Sports,3,30.99,459.96,New York
+2023-11-08,31,ProductA,Clothing,,10.99,273.74,Chicago
+2023-10-02,21,ProductA,Home & Kitchen,1,25.99,328.21,
+2023-12-10,24,ProductC,Home & Kitchen,,15.99,73.8,Houston
+2023-11-23,16,,,1,30.99,152.14,Chicago
+2023-02-23,45,ProductC,Electronics,3,,278.12,
+2023-11-01,20,,Clothing,4,,442.77,Houston
+2023-04-05,35,ProductC,Sports,1,30.99,252.39,
+2023-03-01,28,ProductA,Home & Kitchen,3,,304.5,Houston
+2023-12-03,46,ProductB,Electronics,5,,46.66,New York
+2023-06-04,35,ProductD,Clothing,3,15.99,483.03,Houston
+2023-05-05,18,,Clothing,4,20.99,256.37,Los Angeles
+2023-06-13,24,ProductA,Sports,1,20.99,96.93,Chicago
+2023-02-28,28,ProductA,,,15.99,182.71,Los Angeles
+2023-04-17,14,ProductA,Clothing,3,15.99,266.39,
+2023-07-21,49,ProductC,Clothing,2,20.99,86.49,
+2023-10-28,24,ProductD,Sports,1,15.99,114.39,Los Angeles
+2023-09-27,31,ProductA,Home & Kitchen,1,15.99,459.63,Houston
+2023-11-23,6,ProductC,,2,20.99,438.83,Chicago
+2023-02-08,40,ProductA,Sports,1,30.99,78.71,New York
+2023-06-17,34,ProductC,Home & Kitchen,5,10.99,153.92,Chicago
+2023-05-17,35,ProductB,Sports,5,15.99,325.08,Chicago
+2023-01-14,29,ProductC,Sports,4,20.99,144.68,Houston
+2023-07-28,2,,Sports,,,21.0,
+2023-01-23,5,ProductD,Electronics,4,15.99,356.58,Houston
+2023-12-02,22,ProductC,Sports,3,15.99,112.68,Houston
+2023-09-22,9,ProductD,Home & Kitchen,3,30.99,175.98,New York
+2023-08-16,34,ProductC,Home & Kitchen,5,10.99,156.29,
+2023-09-20,36,ProductD,Clothing,1,15.99,93.14,
+2023-07-29,49,ProductB,Electronics,,10.99,85.13,New York
+2023-03-02,36,,Home & Kitchen,,20.99,89.56,Chicago
+2023-02-26,26,,Electronics,2,20.99,484.4,
+2023-08-26,6,,Clothing,,,368.89,Los Angeles
+2023-06-01,2,ProductC,Electronics,5,25.99,471.24,Los Angeles
+2023-10-08,36,,Home & Kitchen,4,30.99,294.34,Los Angeles
+2023-01-05,8,ProductA,,4,20.99,178.88,Chicago
+2023-04-11,2,ProductA,Electronics,4,,98.68,Los Angeles
+2023-11-02,2,,Electronics,,15.99,252.01,New York
+2023-12-10,8,,,,15.99,256.83,
+2023-01-31,26,ProductC,Sports,2,20.99,393.19,New York
+2023-02-24,37,,,4,25.99,273.65,
+2023-06-03,14,ProductD,Sports,4,,113.53,New York
+2023-10-04,45,ProductB,,3,30.99,410.81,New York
+2023-12-20,28,ProductC,Electronics,1,,91.0,Houston
+2023-12-24,33,ProductC,Sports,,25.99,273.88,Chicago
+2023-07-05,44,ProductA,Sports,1,10.99,40.39,New York
+2023-01-30,20,ProductC,,2,30.99,197.21,Chicago
+2023-11-06,35,ProductC,Electronics,4,30.99,342.5,Chicago
+2023-04-30,46,ProductB,Electronics,3,15.99,86.58,Houston
+2023-12-09,37,ProductD,Electronics,1,30.99,271.94,New York
+2023-01-08,17,ProductB,Sports,2,30.99,278.64,New York
+2023-04-16,49,ProductD,Sports,3,15.99,456.49,Los Angeles
+2023-05-18,43,ProductA,Sports,4,30.99,243.98,Chicago
+2023-07-02,44,ProductB,Electronics,2,25.99,57.61,Houston
+2023-12-06,4,ProductB,Clothing,,30.99,90.05,Chicago
+2023-07-29,9,ProductB,Clothing,3,20.99,152.29,New York
+2023-05-29,20,,Sports,1,30.99,403.5,Los Angeles
+2023-09-17,47,,Sports,5,30.99,142.45,New York
+2023-05-07,1,ProductB,Electronics,1,10.99,312.53,
+2023-10-26,21,ProductC,Electronics,5,10.99,57.62,Los Angeles
+2023-03-07,33,ProductA,Clothing,2,,117.03,Houston
+2023-01-21,35,ProductC,Clothing,3,25.99,317.19,Houston
+2023-10-20,44,ProductA,,3,10.99,67.11,Chicago
+2023-11-21,6,ProductA,Electronics,3,,363.46,Chicago
+2023-04-23,22,,Home & Kitchen,4,25.99,235.57,Los Angeles
+2023-05-19,25,ProductA,,1,,154.2,New York
+2023-08-26,3,ProductB,Electronics,5,10.99,439.47,Los Angeles
+2023-12-27,8,ProductB,Home & Kitchen,4,10.99,343.12,
+2023-12-14,45,ProductA,Home & Kitchen,2,15.99,50.81,Los Angeles
+2023-02-13,12,,Sports,2,25.99,341.69,Los Angeles
+2023-03-05,29,ProductC,Sports,,,115.22,
+2023-09-23,32,,Home & Kitchen,,30.99,461.72,New York
+2023-04-02,2,,Home & Kitchen,4,10.99,93.79,
+2023-04-22,17,ProductC,,,25.99,316.01,Los Angeles
+2023-12-06,19,ProductB,Home & Kitchen,5,30.99,136.36,Chicago
+2023-11-29,15,ProductD,Sports,2,10.99,472.24,Houston
+2023-10-02,22,,Sports,,20.99,175.74,New York
+2023-11-27,48,ProductB,Sports,,30.99,303.03,New York
+2023-08-15,48,ProductA,Clothing,,10.99,82.16,
+2023-08-14,6,,,1,10.99,250.1,Chicago
+2023-05-12,34,,,2,,312.24,Los Angeles
+2023-08-17,43,ProductA,,5,30.99,389.93,Chicago
+2023-11-11,3,ProductD,Clothing,,25.99,287.39,
+2023-05-09,28,ProductD,,1,15.99,357.73,New York
+2023-10-23,41,ProductC,Clothing,4,,432.36,Los Angeles
+2023-01-25,20,ProductA,Clothing,5,10.99,163.31,
+2023-07-06,16,ProductB,Home & Kitchen,1,25.99,183.28,Houston
+2023-10-20,8,ProductB,Clothing,,20.99,34.2,Houston
+2023-12-22,45,ProductD,Electronics,1,,286.05,Houston
+2023-11-22,30,ProductC,Electronics,1,30.99,486.33,New York
+2023-05-15,36,ProductC,,5,25.99,373.33,New York
+2023-01-04,34,ProductB,Electronics,,25.99,496.44,Chicago
+2023-08-15,49,ProductC,Home & Kitchen,3,25.99,238.09,Chicago
+2023-06-18,17,ProductD,Electronics,2,15.99,378.79,Houston
+2023-10-12,25,ProductD,Clothing,3,15.99,97.38,
+2023-11-21,6,ProductC,Electronics,,,222.56,Houston
+2023-01-27,43,ProductD,Sports,2,,328.93,Los Angeles
+2023-08-13,20,ProductD,Home & Kitchen,5,20.99,236.15,Los Angeles
+2023-09-06,18,ProductC,,2,10.99,34.27,Houston
+2023-07-21,46,ProductD,Sports,,15.99,172.08,
+2023-07-17,33,ProductA,Home & Kitchen,5,,344.51,Chicago
+2023-05-16,23,ProductD,Home & Kitchen,1,15.99,209.69,Houston
+2023-05-06,34,,Home & Kitchen,4,15.99,235.23,
+2023-04-05,39,ProductB,Electronics,3,15.99,430.97,
+2023-03-14,10,ProductA,Electronics,3,,149.31,Los Angeles
+2023-09-04,6,ProductC,Sports,5,,315.65,Chicago
+2023-12-07,13,ProductB,Sports,2,20.99,425.97,
+2023-05-16,43,,Clothing,2,25.99,407.43,Houston
+2023-07-15,17,ProductB,Clothing,4,30.99,134.59,
+2023-08-02,18,ProductD,Clothing,1,30.99,44.52,Houston
+2023-04-19,5,ProductB,Home & Kitchen,2,25.99,152.88,
+2023-11-20,26,ProductC,,2,10.99,104.67,Los Angeles
+2023-04-13,15,ProductD,Clothing,,20.99,33.3,Chicago
+2023-12-07,46,ProductD,Sports,1,20.99,166.09,
+2023-11-24,18,,,4,15.99,269.99,
+2023-03-25,30,ProductB,Clothing,2,25.99,332.15,Los Angeles
+2023-08-12,7,,Electronics,5,15.99,201.39,
+2023-09-14,29,ProductD,Clothing,1,30.99,118.06,New York
+2023-05-14,11,ProductD,Clothing,2,30.99,293.27,New York
+2023-12-14,6,,Home & Kitchen,4,25.99,381.14,Houston
+2023-04-18,37,ProductD,Home & Kitchen,3,30.99,353.58,
+2023-01-08,37,ProductB,Clothing,5,,431.35,Houston
+2023-05-30,21,ProductA,Home & Kitchen,,20.99,146.66,
+2023-06-21,23,,Electronics,5,15.99,261.44,Los Angeles
+2023-02-16,11,ProductC,,5,20.99,254.45,Chicago
+2023-01-01,44,ProductA,,5,25.99,174.36,Chicago
+2023-12-27,31,ProductC,Home & Kitchen,3,25.99,349.48,Houston
+2023-06-29,15,ProductD,Clothing,3,30.99,84.43,New York
+2023-02-08,49,ProductA,Electronics,3,10.99,406.47,
+2023-03-31,2,ProductD,Electronics,3,,37.58,Chicago
+2023-03-16,41,ProductD,Sports,4,10.99,206.33,Houston
+2023-08-15,8,,Home & Kitchen,2,25.99,311.51,
+2023-05-04,6,ProductC,Sports,3,20.99,223.69,Los Angeles
+2023-12-10,16,ProductB,Home & Kitchen,3,,334.73,Houston
+2023-04-07,42,,Sports,4,15.99,38.62,New York
+2023-12-06,33,,Clothing,1,10.99,436.24,
+2023-10-10,24,ProductC,Home & Kitchen,4,10.99,57.28,
+2023-07-26,15,,,1,20.99,158.12,Chicago
+2023-02-02,35,ProductC,Home & Kitchen,5,25.99,160.82,Chicago
+2023-04-26,30,,,4,30.99,25.67,Houston
+2023-12-20,26,ProductA,Sports,5,,65.13,New York
+2023-11-12,5,ProductC,Sports,1,20.99,428.9,Chicago
+2023-11-10,1,ProductB,Clothing,4,25.99,392.39,
+2023-06-28,27,,,1,,374.24,Houston
+2023-06-23,21,ProductA,Clothing,1,,350.86,Houston
+2023-08-22,6,ProductB,Electronics,5,15.99,55.77,New York
+2023-05-13,25,,,1,25.99,163.36,Chicago
+2023-04-04,18,,Home & Kitchen,2,30.99,23.16,Chicago
+2023-12-14,5,ProductD,,3,25.99,49.05,New York
+2023-07-14,33,,Sports,4,25.99,38.19,
+2023-07-05,18,ProductB,Clothing,5,20.99,115.49,Houston
+2023-06-14,9,ProductB,Electronics,3,30.99,47.02,New York
+2023-12-28,10,ProductA,Clothing,5,30.99,28.1,Los Angeles
+2023-07-10,37,ProductD,Electronics,2,10.99,137.56,New York
+2023-01-05,32,ProductA,Sports,,10.99,403.45,Houston
+2023-07-25,31,ProductA,Clothing,3,15.99,47.03,
+2023-12-10,10,,Home & Kitchen,4,15.99,492.58,Los Angeles
+2023-08-15,45,ProductA,Home & Kitchen,,30.99,335.64,Los Angeles
+2023-03-15,49,ProductC,Clothing,1,,436.07,Los Angeles
+2023-08-07,36,ProductD,Clothing,,,337.14,Houston
+2023-01-27,33,,Electronics,1,25.99,392.9,New York
+2023-01-23,15,ProductC,Clothing,3,10.99,164.37,Chicago
+2023-07-27,24,ProductB,Electronics,5,15.99,143.52,Houston
+2023-12-21,33,ProductD,Clothing,4,30.99,338.92,Houston
+2023-04-01,29,ProductB,Clothing,1,25.99,290.31,Houston
+2023-02-21,44,ProductB,,3,20.99,262.72,Chicago
+2023-10-30,34,,Electronics,3,25.99,105.08,Houston
+2023-07-28,47,ProductC,Sports,2,10.99,130.71,Chicago
+2023-03-03,45,ProductD,Home & Kitchen,,,283.87,Los Angeles
+2023-10-31,9,,Electronics,4,25.99,216.76,New York
+2023-04-15,38,ProductA,Clothing,4,10.99,482.01,Houston
+2023-05-09,3,ProductD,Home & Kitchen,5,20.99,285.35,Chicago
+2023-11-24,18,,Clothing,5,25.99,227.22,Los Angeles
+2023-04-05,16,ProductD,Sports,3,20.99,476.29,
+2023-01-07,4,ProductD,Electronics,2,10.99,63.97,New York
+2023-06-23,22,,Electronics,3,10.99,150.46,
+2023-09-03,49,ProductB,Clothing,5,10.99,186.27,New York
+2023-01-16,30,ProductB,Clothing,1,,429.68,Houston
+2023-06-19,38,,Electronics,2,30.99,387.88,Chicago
+2023-06-16,23,ProductD,Clothing,,10.99,166.26,New York
+2023-11-06,19,ProductB,Electronics,4,15.99,438.83,Houston
+2023-03-24,8,ProductC,,1,25.99,50.03,Los Angeles
+2023-08-09,27,ProductA,Sports,1,,256.86,Houston
+2023-11-18,5,ProductA,Electronics,,30.99,334.25,
+2023-06-19,46,ProductC,Sports,4,20.99,169.85,New York
+2023-11-19,26,ProductC,Sports,,20.99,53.2,Chicago
+2023-04-25,27,ProductC,,3,15.99,143.44,
+2023-12-15,48,ProductD,Electronics,2,25.99,252.21,Los Angeles
+2023-12-01,20,ProductB,Clothing,1,,172.69,Houston
+2023-08-18,15,ProductC,Clothing,,15.99,219.52,New York
+2023-08-08,19,,Electronics,,,64.7,Los Angeles
+2023-09-04,33,ProductA,Electronics,3,25.99,26.85,Chicago
+2023-04-11,28,ProductA,Sports,4,,441.25,
+2023-08-10,37,ProductC,Sports,3,20.99,57.49,New York
+2023-06-28,39,ProductB,Home & Kitchen,1,15.99,160.56,Los Angeles
+2023-06-24,21,ProductC,Sports,2,20.99,338.74,Chicago
+2023-04-04,45,,Electronics,2,25.99,425.36,Houston
+2023-04-25,4,ProductC,Home & Kitchen,4,15.99,174.21,Chicago
+2023-06-11,19,ProductD,Sports,3,,332.99,
+2023-09-26,14,ProductC,Clothing,5,15.99,246.62,Los Angeles
+2023-08-13,32,ProductD,Sports,2,30.99,44.49,Chicago
+2023-08-22,34,ProductB,Sports,5,30.99,216.01,New York
+2023-12-03,19,ProductB,Sports,3,25.99,34.33,
+2023-03-08,13,,Sports,3,25.99,482.81,New York
+2023-05-06,48,ProductB,,5,15.99,385.85,Chicago
+2023-05-19,28,ProductD,Electronics,4,,182.86,Chicago
+2023-04-23,40,ProductB,Home & Kitchen,5,30.99,132.68,
+2023-08-07,35,ProductD,Electronics,1,25.99,212.16,
+2023-06-05,8,,Sports,5,15.99,171.76,Houston
+2023-07-04,31,ProductD,Clothing,5,,197.98,Chicago
+2023-05-01,46,ProductC,Home & Kitchen,4,25.99,460.98,Chicago
+2023-11-18,17,ProductB,Electronics,1,10.99,214.17,New York
+2023-07-17,2,ProductA,Clothing,3,30.99,375.87,Houston
+2023-12-11,25,ProductC,Sports,1,25.99,95.27,New York
+2023-10-18,17,ProductD,Clothing,5,,276.17,Chicago
+2023-01-04,46,ProductC,Electronics,,,256.99,New York
+2023-07-08,28,ProductC,Home & Kitchen,3,20.99,303.79,Los Angeles
+2023-08-27,38,ProductC,Electronics,4,15.99,346.35,
+2023-06-15,25,ProductC,Clothing,3,15.99,433.29,New York
+2023-06-21,49,ProductD,Clothing,4,30.99,130.38,New York
+2023-07-31,13,ProductB,Electronics,5,30.99,203.14,Chicago
+2023-12-11,5,ProductB,Electronics,1,,47.45,Houston
+2023-03-12,49,ProductC,Electronics,1,15.99,319.61,New York
+2023-05-29,47,ProductA,Clothing,1,,468.68,Los Angeles
+2023-10-12,41,ProductB,,,,210.17,Chicago
+2023-04-26,15,ProductD,Electronics,1,25.99,486.44,Houston
+2023-11-19,11,ProductD,Sports,1,30.99,306.98,New York
+2023-04-03,28,ProductB,Clothing,2,30.99,121.4,
+2023-04-13,15,ProductD,,5,15.99,274.17,
+2023-12-24,39,ProductD,Home & Kitchen,1,15.99,327.22,
+2023-07-17,14,,,,25.99,339.81,Chicago
+2023-04-20,5,ProductD,Home & Kitchen,1,15.99,326.26,
+2023-11-26,23,ProductB,,4,10.99,111.01,Houston
+2023-04-11,16,ProductB,Clothing,5,,119.99,Chicago
+2023-07-02,30,ProductA,Sports,4,25.99,135.9,Los Angeles
+2023-11-30,15,ProductC,Clothing,1,,371.84,Los Angeles
+2023-06-09,43,ProductB,,5,20.99,259.69,
+2023-03-23,26,ProductD,,5,25.99,342.2,Chicago
+2023-02-05,12,ProductA,Home & Kitchen,5,10.99,403.69,
+2023-08-26,32,,Electronics,3,20.99,290.75,
+2023-09-01,28,ProductA,Clothing,2,25.99,246.15,Los Angeles
+2023-09-08,23,ProductD,Home & Kitchen,2,15.99,213.21,Los Angeles
+2023-09-12,47,ProductB,,1,20.99,277.41,Chicago
+2023-10-09,44,ProductA,,2,30.99,91.8,
+2023-01-22,21,ProductD,Electronics,5,15.99,397.49,Chicago
+2023-08-18,3,,Clothing,3,25.99,458.12,Houston
+2023-06-03,26,ProductA,,2,15.99,409.94,Houston
+2023-04-30,1,ProductD,Sports,2,15.99,414.51,New York
+2023-06-15,32,ProductC,Electronics,3,15.99,418.11,Los Angeles
+2023-07-18,47,ProductB,Electronics,4,30.99,104.31,Chicago
+2023-12-13,7,ProductD,Home & Kitchen,1,15.99,497.99,
+2023-03-16,19,ProductC,Home & Kitchen,5,30.99,335.45,New York
+2023-03-20,23,ProductB,Home & Kitchen,,25.99,222.04,Houston
+2023-11-15,47,ProductB,,3,10.99,446.25,
+2023-03-14,26,ProductB,Electronics,4,30.99,299.53,New York
+2023-07-19,14,ProductC,Clothing,,15.99,496.94,New York
+2023-10-29,13,ProductA,Sports,1,30.99,381.0,Houston
+2023-05-14,38,ProductC,,4,20.99,196.41,
+2023-02-17,20,ProductC,,1,25.99,376.43,
+2023-07-07,32,ProductD,Clothing,2,15.99,370.45,New York
+2023-06-20,29,ProductD,,3,20.99,170.24,Los Angeles
+2023-05-19,20,,Clothing,1,20.99,444.4,Los Angeles
+2023-08-31,41,ProductC,Clothing,3,30.99,87.57,Los Angeles
+2023-11-10,41,ProductC,Electronics,3,20.99,195.33,New York
+2023-12-12,26,,,,15.99,325.41,Los Angeles
+2023-05-06,48,ProductC,,4,,249.99,Houston
+2023-07-26,30,ProductC,Sports,5,20.99,345.51,New York
+2023-12-05,29,,Clothing,4,20.99,498.73,Los Angeles
+2023-07-17,43,,Sports,,30.99,57.44,Chicago
+2023-07-06,11,,Sports,4,15.99,384.31,
+2023-01-18,21,ProductB,Sports,5,,412.36,New York
+2023-07-17,18,ProductD,Home & Kitchen,,10.99,155.46,
+2023-12-17,1,,Electronics,5,25.99,142.47,
+2023-06-02,40,ProductB,Clothing,4,10.99,231.85,Los Angeles
+2023-05-12,39,ProductD,,3,10.99,209.05,Chicago
+2023-11-22,35,,Home & Kitchen,2,15.99,263.75,Los Angeles
+2023-06-14,2,ProductC,Home & Kitchen,5,15.99,121.56,Chicago
+2023-02-28,49,ProductC,Home & Kitchen,2,20.99,257.02,Chicago
+2023-06-27,23,ProductD,,3,25.99,410.12,
+2023-06-02,46,ProductA,Home & Kitchen,5,30.99,443.78,
+2023-06-11,23,ProductD,Home & Kitchen,1,15.99,340.05,Chicago
+2023-12-20,40,ProductB,,1,15.99,158.3,Chicago
+2023-08-30,29,ProductC,Electronics,4,20.99,439.16,Chicago
+2023-05-16,2,ProductC,Home & Kitchen,2,25.99,222.19,
+2023-08-24,22,,Clothing,1,,131.27,Houston
+2023-02-16,3,ProductB,Electronics,4,30.99,84.61,Houston
+2023-05-08,33,ProductA,,4,25.99,481.6,New York
+2023-12-04,7,ProductB,Electronics,4,25.99,62.23,Houston
+2023-06-07,39,ProductB,Electronics,,20.99,274.29,Los Angeles
+2023-01-13,36,ProductB,Sports,3,,117.05,
+2023-04-29,37,ProductB,,2,10.99,436.77,Houston
+2023-10-30,24,ProductA,Electronics,5,15.99,113.37,Chicago
+2023-10-16,19,ProductB,,4,10.99,373.51,Chicago
+2023-10-18,39,ProductA,Home & Kitchen,5,10.99,99.26,Los Angeles
+2023-04-26,26,ProductD,,1,10.99,470.29,New York
+2023-03-29,47,ProductB,Electronics,3,20.99,338.4,Chicago
+2023-05-05,16,,,,30.99,219.26,Houston
+2023-06-24,28,ProductA,Sports,5,,481.99,Chicago
+2023-12-30,22,ProductA,Sports,4,25.99,271.54,New York
+2023-02-22,2,ProductB,Sports,3,10.99,204.36,Los Angeles
+2023-04-21,10,,,4,30.99,97.99,New York
+2023-03-06,18,,Electronics,3,20.99,366.12,New York
+2023-11-29,12,ProductB,Home & Kitchen,5,30.99,306.24,
+2023-03-15,1,,Clothing,5,,126.99,Chicago
+2023-05-27,4,ProductA,Home & Kitchen,1,20.99,139.98,Chicago
+2023-09-18,37,ProductB,Sports,,25.99,125.78,Houston
+2023-09-21,21,ProductB,Electronics,2,15.99,258.0,New York
+2023-05-12,20,ProductB,,,15.99,42.7,Los Angeles
+2023-02-18,48,ProductD,,4,25.99,158.84,Chicago
+2023-03-18,6,ProductB,Electronics,4,,373.58,Chicago
+2023-10-21,21,ProductC,Electronics,1,20.99,318.19,Los Angeles
+2023-04-27,5,ProductC,Sports,,15.99,412.93,
+2023-02-18,42,ProductA,Sports,3,,377.52,Houston
+2023-04-20,17,ProductD,Electronics,,,30.21,Chicago
+2023-06-29,17,ProductD,Sports,3,10.99,293.39,Chicago
+2023-02-19,6,,Clothing,5,,230.44,Houston
+2023-03-13,33,ProductB,,5,20.99,193.42,Houston
+2023-12-13,23,ProductC,Sports,4,15.99,496.34,Chicago
+2023-10-13,4,ProductD,Sports,2,15.99,335.34,Houston
+2023-01-04,9,ProductC,Sports,4,10.99,140.51,Houston
+2023-03-16,29,ProductC,Electronics,,25.99,275.78,Los Angeles
+2023-03-26,42,ProductB,Clothing,3,15.99,65.71,Houston
+2023-11-18,11,ProductC,Sports,2,,377.73,Los Angeles
+2023-01-21,39,ProductA,Clothing,2,10.99,186.87,New York
+2023-07-28,29,ProductA,Clothing,1,30.99,101.06,Houston
+2023-02-12,32,ProductD,Electronics,5,25.99,97.96,Los Angeles
+2023-01-29,45,ProductD,Sports,2,20.99,27.31,New York
+2023-12-10,12,,Clothing,,25.99,393.38,Houston
+2023-06-30,35,ProductC,Sports,4,15.99,369.78,Houston
+2023-11-01,28,ProductD,Sports,3,15.99,252.81,
+2023-04-13,8,ProductB,Home & Kitchen,5,10.99,166.86,Chicago
+2023-09-23,40,ProductD,,,15.99,207.97,
+2023-09-16,39,ProductA,Sports,4,25.99,444.36,Houston
+2023-12-31,6,ProductC,Electronics,3,,78.22,
+2023-08-22,10,ProductA,,4,10.99,34.19,
+2023-12-12,25,ProductD,Electronics,4,30.99,123.55,Houston
+2023-04-11,13,ProductD,Electronics,5,30.99,269.93,Chicago
+2023-04-01,41,ProductA,Electronics,3,,23.69,New York
+2023-03-10,34,,Home & Kitchen,4,,70.05,Houston
+2023-04-16,15,,,2,30.99,354.97,Houston
+2023-01-11,46,ProductD,Electronics,,10.99,235.07,Los Angeles
+2023-01-13,16,,Home & Kitchen,,25.99,475.35,New York
+2023-04-15,5,ProductA,,5,10.99,457.17,Houston
+2023-08-14,23,ProductC,Electronics,1,,152.7,Chicago
+2023-06-17,3,ProductD,Electronics,2,20.99,201.3,New York
+2023-10-17,8,ProductB,Sports,3,10.99,460.72,Los Angeles
+2023-04-10,46,,,,15.99,298.04,New York
+2023-08-06,9,,Clothing,2,30.99,197.47,Los Angeles
+2023-11-03,6,ProductB,Electronics,4,10.99,404.2,Houston
+2023-12-11,40,ProductB,Electronics,1,20.99,463.76,Houston
+2023-07-30,16,ProductA,Electronics,5,15.99,343.28,New York
+2023-10-04,16,ProductA,Sports,,25.99,130.83,Chicago
+2023-08-11,42,,Sports,1,10.99,413.25,
+2023-06-06,26,ProductC,Sports,,30.99,221.85,New York
+2023-03-14,23,ProductA,,2,15.99,355.06,
+2023-10-02,26,ProductA,Home & Kitchen,1,10.99,253.45,Houston
+2023-02-09,26,ProductD,,3,15.99,471.62,Chicago
+2023-08-23,20,ProductD,Home & Kitchen,,15.99,52.82,New York
+2023-05-04,30,ProductA,Clothing,4,15.99,94.78,
+2023-10-12,10,ProductC,,4,20.99,113.39,New York
+2023-06-02,12,,Electronics,3,10.99,126.08,New York
+2023-05-27,36,ProductB,Clothing,4,,133.01,Chicago
+2023-07-15,27,ProductA,Electronics,5,15.99,93.37,
+2023-06-22,40,ProductC,Home & Kitchen,4,10.99,352.6,Houston
+2023-07-31,19,ProductC,Sports,4,15.99,124.71,Houston
+2023-10-29,9,ProductC,Home & Kitchen,,30.99,133.02,Houston
+2023-11-07,2,ProductA,,2,10.99,114.75,Los Angeles
+2023-01-01,36,ProductA,Clothing,1,10.99,211.37,Los Angeles
+2023-05-19,47,ProductC,Clothing,4,30.99,480.12,Chicago
+2023-07-15,11,ProductC,Clothing,2,10.99,196.05,
+2023-08-08,11,ProductA,Home & Kitchen,3,15.99,162.86,
+2023-12-22,25,,,,20.99,52.93,Los Angeles
+2023-06-12,32,ProductA,Sports,5,10.99,189.21,Los Angeles
+2023-02-20,44,ProductD,Clothing,3,30.99,131.45,Los Angeles
+2023-08-31,28,ProductC,Sports,5,20.99,386.21,Chicago
+2023-12-25,14,,Clothing,2,10.99,73.58,New York
+2023-01-21,15,ProductB,Clothing,3,,88.97,New York
+2023-06-21,6,ProductA,Home & Kitchen,2,15.99,153.68,New York
+2023-04-29,24,ProductC,Electronics,5,,158.25,
+2023-05-09,43,ProductA,Clothing,4,25.99,426.23,New York
+2023-04-16,40,ProductB,Electronics,2,,399.82,Chicago
+2023-07-14,38,ProductA,Home & Kitchen,1,25.99,297.75,Los Angeles
+2023-08-14,39,,Clothing,4,20.99,158.52,
+2023-05-21,12,ProductB,,4,30.99,173.06,New York
+2023-09-29,44,ProductD,Clothing,1,10.99,304.26,Los Angeles
+2023-04-29,25,ProductD,Clothing,3,25.99,375.14,
+2023-02-03,18,ProductC,,1,,204.37,Houston
+2023-06-01,22,ProductD,,,25.99,264.59,Chicago
+2023-02-08,31,ProductA,Clothing,4,10.99,446.26,Chicago
+2023-09-15,19,,Sports,3,10.99,331.9,Chicago
+2023-09-24,26,ProductD,Home & Kitchen,3,30.99,277.06,Chicago
+2023-01-07,30,ProductC,Sports,5,10.99,54.19,Chicago
+2023-09-20,38,ProductA,Clothing,1,25.99,104.49,New York
+2023-04-13,41,ProductC,Electronics,4,10.99,116.48,New York
+2023-11-28,43,ProductC,,2,15.99,319.11,Houston
+2023-12-08,32,,,5,25.99,71.89,
+2023-06-28,40,,Electronics,,20.99,33.92,New York
+2023-11-04,12,ProductC,Home & Kitchen,,30.99,192.97,Chicago
+2023-09-16,15,ProductC,Home & Kitchen,2,25.99,365.05,Los Angeles
+2023-11-29,33,ProductD,Clothing,3,10.99,352.76,Los Angeles
+2023-06-07,2,ProductD,Clothing,4,30.99,400.48,
+2023-01-10,2,ProductB,,,30.99,354.2,Houston
+2023-04-26,37,,Electronics,,,314.38,Houston
+2023-04-27,26,ProductD,Electronics,4,20.99,253.36,New York
+2023-07-01,13,ProductC,Sports,1,,120.08,Houston
+2023-08-24,9,ProductD,Home & Kitchen,4,15.99,292.9,Houston
+2023-07-13,13,ProductB,Home & Kitchen,4,15.99,325.58,Chicago
+2023-10-27,25,ProductD,Clothing,1,10.99,79.4,Los Angeles
+2023-03-21,20,ProductC,Clothing,1,15.99,291.27,New York
+2023-03-04,4,ProductD,Home & Kitchen,4,30.99,66.92,Houston
+2023-11-29,11,ProductD,Sports,4,,282.6,Houston
+2023-02-17,8,,Clothing,5,10.99,96.28,Los Angeles
+2023-03-18,29,,Clothing,2,15.99,77.13,
+2023-05-30,15,ProductB,Sports,5,10.99,74.29,New York
+2023-05-01,9,ProductB,,5,30.99,457.29,Houston
+2023-10-02,47,ProductD,Home & Kitchen,3,,307.08,New York
+2023-12-12,36,,Electronics,4,30.99,140.08,New York
+2023-01-14,36,,Electronics,5,25.99,54.3,
+2023-08-11,18,ProductD,Electronics,4,15.99,277.37,Houston
+2023-04-03,24,,Electronics,5,15.99,89.51,New York
+2023-08-25,13,ProductA,Electronics,3,20.99,393.63,Houston
+2023-04-16,46,ProductC,,4,15.99,258.13,Houston
+2023-08-02,8,ProductA,Home & Kitchen,2,10.99,368.7,Chicago
+2023-01-07,48,ProductA,Clothing,3,10.99,209.95,
+2023-04-11,47,ProductA,Electronics,1,,357.11,New York
+2023-02-18,40,,Sports,2,30.99,348.61,New York
+2023-02-10,31,ProductD,Electronics,,10.99,289.48,Houston
+2023-06-08,20,ProductB,,,20.99,425.96,New York
+2023-05-24,43,ProductC,Home & Kitchen,5,30.99,299.59,Chicago
+2023-02-07,46,ProductC,Sports,4,30.99,297.49,Chicago
+2023-03-01,2,ProductA,Electronics,4,30.99,167.83,Los Angeles
+2023-04-24,44,ProductB,,2,,467.12,New York
+2023-04-06,19,ProductD,Electronics,1,15.99,268.23,New York
+2023-12-19,15,ProductB,Electronics,4,10.99,208.02,
+2023-07-28,26,ProductB,Sports,,15.99,279.99,Houston
+2023-10-16,38,ProductC,,1,25.99,89.72,
+2023-03-04,9,,Home & Kitchen,1,30.99,147.26,Chicago
+2023-04-04,35,ProductA,,3,25.99,167.21,New York
+2023-11-17,27,,Home & Kitchen,2,15.99,267.28,New York
+2023-12-13,12,ProductC,Home & Kitchen,2,10.99,353.85,
+2023-05-31,45,ProductB,Home & Kitchen,2,30.99,157.86,
+2023-10-20,12,ProductA,Home & Kitchen,,25.99,85.17,Los Angeles
+2023-03-25,41,ProductD,,5,,288.42,Los Angeles
+2023-05-08,37,ProductD,Sports,2,25.99,430.23,Los Angeles
+2023-09-19,13,ProductB,Home & Kitchen,4,30.99,220.75,
+2023-12-15,18,,Clothing,4,20.99,248.37,Houston
+2023-06-04,32,,Home & Kitchen,2,30.99,158.82,
+2023-08-30,11,ProductA,Clothing,4,,408.24,Chicago
+2023-03-25,49,ProductC,Electronics,3,,77.92,New York
+2023-05-16,11,,Home & Kitchen,5,25.99,102.12,Houston
+2023-06-30,12,ProductD,Clothing,,15.99,499.98,New York
+2023-03-22,30,ProductD,Home & Kitchen,5,15.99,347.46,Houston
+2023-01-01,35,ProductD,,1,25.99,283.07,Houston
+2023-08-04,11,,Sports,1,15.99,401.65,Chicago
+2023-07-27,13,ProductB,Electronics,,15.99,498.5,Chicago
+2023-11-27,40,,Sports,5,20.99,111.62,Chicago
+2023-09-10,49,,Sports,2,25.99,399.87,New York
+2023-05-12,11,ProductA,,2,10.99,184.24,Chicago
+2023-03-03,3,ProductC,Clothing,3,20.99,370.99,Houston
+2023-11-20,48,,Electronics,,25.99,359.68,New York
+2023-05-25,12,,Sports,,15.99,499.2,Houston
+2023-03-26,47,ProductC,Home & Kitchen,5,15.99,73.7,Los Angeles
+2023-04-27,42,ProductD,Clothing,,10.99,21.02,New York
+2023-08-18,28,ProductC,Electronics,4,15.99,378.94,Houston
+2023-09-13,4,,Sports,4,10.99,293.01,Houston
+2023-11-09,17,ProductB,Sports,1,15.99,351.62,New York
+2023-11-15,1,ProductA,Clothing,,30.99,381.69,Los Angeles
+2023-02-18,14,ProductA,Home & Kitchen,5,30.99,256.88,New York
+2023-05-26,39,ProductC,Sports,1,15.99,191.14,Chicago
+2023-01-10,5,ProductC,,3,10.99,389.78,Chicago
+2023-07-10,4,ProductD,,,10.99,202.46,Chicago
+2023-03-21,20,ProductA,Clothing,1,20.99,318.65,
+2023-08-19,18,ProductC,Electronics,3,30.99,448.83,Los Angeles
+2023-07-26,17,,Clothing,5,,96.03,New York
+2023-08-17,8,,Clothing,3,,24.27,
+2023-11-24,25,ProductB,Electronics,1,20.99,143.24,Los Angeles
+2023-11-15,12,ProductB,Electronics,,10.99,402.79,Houston
+2023-10-07,23,ProductC,Electronics,5,15.99,292.08,New York
+2023-12-14,28,ProductD,Home & Kitchen,1,30.99,474.16,Chicago
+2023-01-08,3,ProductD,Sports,4,25.99,282.98,Los Angeles
+2023-10-06,9,ProductD,Clothing,,15.99,147.58,Houston
+2023-12-21,9,ProductD,,2,10.99,387.62,Los Angeles
+2023-06-08,26,ProductA,Electronics,3,,335.62,Houston
+2023-09-04,39,ProductD,Electronics,3,30.99,413.93,Los Angeles
+2023-03-22,34,ProductB,Electronics,,,340.64,Chicago
+2023-06-05,25,ProductB,Sports,2,10.99,236.94,
+2023-02-17,22,ProductA,,,,153.0,Houston
+2023-04-25,5,ProductC,Clothing,3,,46.69,New York
+2023-01-12,32,,Sports,3,10.99,167.81,New York
+2023-12-01,12,ProductB,Home & Kitchen,,25.99,42.2,Los Angeles
+2023-10-14,38,ProductB,,4,10.99,226.41,
+2023-04-01,8,ProductA,,,,128.38,Houston
+2023-10-18,23,ProductB,Home & Kitchen,5,10.99,357.75,
+2023-02-24,43,,Clothing,,10.99,125.69,Los Angeles
+2023-12-04,32,ProductA,,3,25.99,59.09,Houston
+2023-06-13,10,ProductD,Electronics,4,20.99,422.62,New York
+2023-03-13,19,ProductD,Clothing,,10.99,48.82,New York
+2023-11-12,24,ProductD,Sports,3,10.99,380.46,Houston
+2023-04-23,20,,Home & Kitchen,,15.99,466.12,Houston
+2023-03-10,26,ProductC,Electronics,5,30.99,71.42,Houston
+2023-01-14,6,ProductB,Electronics,4,30.99,288.64,New York
+2023-04-12,26,,Electronics,3,30.99,236.83,Houston
+2023-10-03,46,ProductC,Sports,4,,403.38,Houston
+2023-12-30,48,ProductA,Electronics,,30.99,319.27,
+2023-09-22,25,,,,30.99,153.57,Los Angeles
+2023-12-19,45,ProductA,Electronics,2,15.99,20.71,
+2023-07-29,27,ProductC,Clothing,3,25.99,251.78,Los Angeles
+2023-07-17,44,,,1,30.99,449.17,Los Angeles
+2023-04-11,33,ProductB,Electronics,5,15.99,454.57,Los Angeles
+2023-09-11,31,ProductC,Sports,,15.99,80.14,New York
+2023-06-07,15,ProductB,Electronics,3,10.99,433.12,New York
+2023-08-19,8,ProductA,Sports,,30.99,36.53,Houston
+2023-05-31,33,ProductB,,3,,64.33,
+2023-01-31,2,,,1,15.99,483.79,
+2023-09-13,48,,,4,15.99,205.74,Houston
+2023-01-20,46,ProductD,,5,15.99,53.98,
+2023-09-18,44,ProductB,Sports,1,15.99,245.82,Houston
+2023-05-29,27,ProductD,Clothing,5,20.99,42.15,Chicago
+2023-12-29,16,ProductC,Sports,3,15.99,27.86,
+2023-03-16,5,ProductA,Sports,5,25.99,289.64,New York
+2023-05-04,11,ProductC,Electronics,4,25.99,121.38,Chicago
+2023-08-03,22,ProductA,Electronics,2,,318.52,Houston
+2023-11-13,40,ProductB,Sports,5,30.99,180.66,New York
+2023-08-18,43,,Home & Kitchen,2,30.99,83.59,
+2023-09-08,44,ProductB,Clothing,4,,492.51,Los Angeles
+2023-04-04,31,ProductA,,1,30.99,139.97,Houston
+2023-06-19,23,ProductD,,,15.99,49.75,
+2023-02-10,1,ProductA,,5,30.99,153.84,
+2023-07-08,18,ProductD,Electronics,5,30.99,140.82,Houston
+2023-07-29,13,ProductC,Electronics,5,25.99,163.83,Houston
+2023-06-29,28,,Clothing,5,,190.72,Houston
+2023-10-24,44,ProductC,Clothing,2,30.99,406.48,
+2023-03-01,48,ProductB,Sports,4,10.99,48.7,Chicago
+2023-01-30,23,ProductD,Electronics,2,15.99,190.18,Los Angeles
+2023-08-14,32,ProductD,,3,15.99,69.8,
+2023-04-05,35,ProductC,Sports,3,15.99,491.45,Houston
+2023-08-27,35,,Home & Kitchen,1,10.99,89.11,Chicago
+2023-06-15,43,,Home & Kitchen,1,20.99,249.94,Los Angeles
+2023-08-05,5,ProductC,Clothing,5,,250.42,Chicago
+2023-09-30,37,,Electronics,3,20.99,394.97,Houston
+2023-12-22,20,ProductB,Electronics,2,25.99,150.63,Los Angeles
+2023-06-17,45,ProductA,Home & Kitchen,4,20.99,374.13,Chicago
+2023-06-07,18,ProductD,Clothing,3,10.99,32.64,Chicago
+2023-03-07,49,ProductD,Clothing,3,25.99,465.03,Chicago
+2023-10-07,48,ProductD,Electronics,2,15.99,67.5,Los Angeles
+2023-07-20,7,ProductA,Electronics,3,30.99,250.8,Houston
+2023-03-29,7,ProductB,Home & Kitchen,,,103.25,Los Angeles
+2023-10-21,49,ProductC,,2,15.99,196.94,Chicago
+2023-08-06,10,,Clothing,,30.99,328.17,Chicago
+2023-12-12,29,,Electronics,2,30.99,88.39,Houston
+2023-05-15,14,ProductA,Clothing,2,15.99,158.77,New York
+2023-08-05,10,ProductD,,2,,346.01,Houston
+2023-04-12,22,,Home & Kitchen,3,,425.38,Los Angeles
+2023-10-25,3,ProductC,,3,10.99,304.59,Chicago
+2023-02-13,10,,Home & Kitchen,4,15.99,271.03,
+2023-04-21,47,ProductD,Clothing,1,10.99,72.61,Chicago
+2023-08-28,37,ProductC,Sports,,20.99,90.34,New York
+2023-10-06,29,ProductD,Clothing,4,20.99,479.93,New York
+2023-01-12,1,ProductD,Sports,,15.99,21.26,Houston
+2023-04-30,11,ProductA,Clothing,2,10.99,252.52,
+2023-10-10,14,ProductD,,5,,383.04,Los Angeles
+2023-02-18,44,ProductC,Home & Kitchen,4,15.99,120.78,Houston
+2023-07-19,3,ProductA,Clothing,5,,240.59,Chicago
+2023-08-28,38,ProductA,Electronics,5,10.99,256.67,
+2023-07-02,8,ProductC,Home & Kitchen,,10.99,144.99,Chicago
+2023-04-07,24,ProductA,,,15.99,441.8,
+2023-12-23,31,ProductC,Clothing,3,,464.07,
+2023-12-05,18,,Home & Kitchen,2,10.99,379.68,
+2023-03-29,4,ProductA,Electronics,1,,24.15,Los Angeles
+2023-01-03,48,,Home & Kitchen,,10.99,321.88,
+2023-09-22,35,ProductA,Clothing,1,25.99,131.41,Houston
+2023-09-24,17,ProductD,Electronics,1,25.99,148.25,New York
+2023-09-19,19,ProductC,Clothing,1,,108.23,
+2023-10-22,43,ProductD,Sports,1,30.99,294.76,Los Angeles
+2023-04-11,19,,Home & Kitchen,5,10.99,234.42,Chicago
+2023-04-28,29,ProductC,Electronics,5,,112.91,
+2023-03-01,36,ProductC,Clothing,5,,467.67,New York
+2023-06-14,27,,Sports,2,30.99,134.83,Los Angeles
+2023-09-19,40,ProductC,Clothing,4,20.99,393.79,Los Angeles
+2023-02-08,43,ProductC,Clothing,,,31.85,Chicago
+2023-06-13,47,ProductA,Home & Kitchen,3,10.99,108.07,
+2023-03-30,6,ProductB,Home & Kitchen,5,20.99,413.06,Houston
+2023-07-27,29,ProductD,Sports,2,,277.48,
+2023-12-07,44,ProductB,Home & Kitchen,2,25.99,330.13,Los Angeles
+2023-09-23,20,ProductC,Electronics,,20.99,225.87,
+2023-05-13,11,ProductB,Sports,3,20.99,229.1,Houston
+2023-01-25,11,ProductA,Home & Kitchen,1,15.99,80.19,Houston
+2023-04-05,10,,,2,10.99,102.08,Los Angeles
+2023-12-06,28,,Electronics,4,10.99,461.12,New York
+2023-03-19,36,ProductB,Clothing,4,30.99,239.66,Los Angeles
+2023-09-25,12,ProductA,Electronics,4,20.99,246.78,Houston
+2023-03-23,33,,Electronics,2,,339.84,Houston
+2023-06-04,39,ProductB,Electronics,2,,26.78,
+2023-06-25,32,ProductB,,,25.99,275.69,Chicago
+2023-04-09,23,ProductD,Electronics,2,25.99,444.96,Houston
+2023-01-22,28,ProductA,,2,,220.31,New York
+2023-06-20,22,ProductD,,4,20.99,218.05,Los Angeles
+2023-05-26,34,ProductB,Home & Kitchen,,15.99,237.59,Houston
+2023-04-12,45,ProductD,,3,,430.45,
+2023-09-02,42,ProductD,,3,20.99,312.8,
+2023-07-03,44,ProductB,Sports,2,20.99,378.73,Chicago
+2023-04-11,36,,,4,25.99,364.71,Los Angeles
+2023-07-16,42,ProductC,Electronics,,20.99,44.41,Houston
+2023-04-22,24,,Clothing,3,30.99,488.82,Chicago
+2023-08-15,41,ProductA,,4,25.99,358.98,New York
+2023-09-25,24,,,2,,298.46,Houston
+2023-04-08,9,ProductB,Home & Kitchen,2,25.99,41.68,Chicago
+2023-08-27,42,ProductD,Home & Kitchen,5,15.99,460.68,New York
+2023-01-12,46,ProductA,Electronics,2,20.99,245.39,
+2023-01-26,48,ProductA,Sports,4,25.99,457.37,Los Angeles
+2023-04-08,16,ProductA,,2,20.99,220.84,Los Angeles
+2023-12-18,37,ProductD,Clothing,1,10.99,297.11,New York
+2023-10-29,2,,,5,15.99,448.98,Houston
+2023-09-20,31,ProductD,Sports,2,25.99,241.2,Los Angeles
+2023-03-31,38,ProductC,Sports,2,30.99,106.18,Los Angeles
+2023-12-11,43,ProductA,Clothing,5,15.99,224.03,New York
+2023-02-08,1,ProductB,Electronics,1,20.99,203.18,New York
+2023-02-21,20,ProductD,,,15.99,370.81,
+2023-01-17,7,ProductA,,5,10.99,423.55,New York
+2023-08-07,30,ProductD,Home & Kitchen,4,15.99,25.44,New York
+2023-09-17,4,ProductD,Electronics,4,25.99,257.51,Chicago
+2023-12-13,32,,Clothing,1,10.99,148.29,Houston
+2023-05-03,30,ProductD,,2,20.99,98.93,Chicago
+2023-09-16,17,ProductB,Sports,5,10.99,339.54,New York
+2023-05-14,4,ProductC,Electronics,3,30.99,421.06,
+2023-09-29,27,ProductC,Sports,1,15.99,281.31,Houston
+2023-12-01,7,ProductD,Sports,5,20.99,113.02,Chicago
+2023-06-30,42,ProductD,,5,25.99,380.62,Chicago
+2023-12-26,38,ProductD,Clothing,1,30.99,270.24,Houston
+2023-09-21,12,ProductC,Clothing,3,15.99,406.23,New York
+2023-06-29,18,ProductD,Clothing,4,,483.07,Houston
+2023-12-25,44,,,,25.99,221.29,Chicago
+2023-09-07,4,ProductD,Home & Kitchen,,30.99,173.12,Los Angeles
+2023-07-03,21,ProductB,Electronics & Gadgets,4,15.99,155.4,Houston
+2023-04-24,28,ProductB,Electronics & Gadgets,2,25.99,351.67,
+2023-07-25,29,ProductC,Electronics & Gadgets,,20.99,486.5,Chicago
+2023-11-08,15,ProductB,Electronics & Gadgets,,,157.19,Chicago
+2023-03-30,15,ProductC,Electronics & Gadgets,2,15.99,241.89,Los Angeles
+2023-06-22,5,ProductA,Clothing,5,,315.87,
+2023-02-17,23,ProductD,Home & Kitchen,5,25.99,257.71,New York
+2023-04-28,30,ProductD,Electronics,4,20.99,130.63,Chicago
+2023-07-12,39,ProductD,Clothing,2,10.99,276.87,New York
+2023-11-20,12,,Sports,2,30.99,51.66,Los Angeles
+2023-09-09,15,ProductD,Home & Kitchen,3,15.99,285.78,Los Angeles
+2023-07-15,19,ProductC,Home & Kitchen,1,25.99,430.14,
+2023-12-26,26,ProductA,,2,,87.67,Chicago
+2023-01-10,45,ProductB,Electronics,2,30.99,176.17,Chicago
+2023-07-31,4,ProductB,Electronics,4,10.99,322.94,Los Angeles
+2023-10-05,38,,Sports,,10.99,192.46,Houston
+2023-08-31,8,ProductA,Home & Kitchen,2,15.99,219.2,New York
+2023-10-20,30,ProductA,Electronics,5,15.99,182.46,Los Angeles
+2023-03-29,15,ProductB,Electronics,2,,251.68,New York
+2023-03-12,12,,,2,20.99,199.13,
+2023-03-30,10,ProductC,Sports,1,10.99,89.24,Los Angeles
+2023-11-11,12,ProductA,Sports,5,25.99,115.43,
+2023-07-13,17,ProductB,Electronics,3,,58.04,Houston
+2023-02-09,40,ProductC,Clothing,5,10.99,244.48,Houston
+2023-03-29,2,ProductC,,3,,425.79,Chicago
