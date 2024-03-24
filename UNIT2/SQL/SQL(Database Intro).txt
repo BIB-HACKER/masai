@@ -1,0 +1,80 @@
+1. What is the difference between web1.0 and web2.0?
+2. 3 advantages of using Database over file system for storing a application's data
+3. What are the 2 primary ways of storing data in a computer?
+4. What is SQL and what is MySQL?
+5. What is database?
+6. What is DBMS?
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+1. What is the difference between web1.0 and web2.0?
+
+Web 1.0:
+Websites were basic and had static information.
+Users couldn't interact much; it was like reading an online brochure.
+Owners controlled the content, and it was not very dynamic.
+Examples: Early websites with static content, such as online brochures and informational pages, News websites.
+
+Web 2.0:
+Websites became more interactive and dynamic.
+Users actively contribute – think social media, blogs, and collaboration.
+The internet became a place where everyone could create and share content.
+Examples:Social media platforms (Facebook, Twitter),collaborative platforms (Wikipedia), and interactive web applications.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2. 3 advantages of using Database over file system for storing a application's data.
+
+Advantages of Using a Database for Storing Application Data-->
+
+Keeps Data Safe and Correct:
+Databases make sure the information is right and stays that way. They stop bad data from getting in and make sure everything is organized correctly.
+Finds Information Quickly:
+Databases are good at finding things fast. If you have lots of data, like a big list, databases can find what you're looking for without reading through everything.
+Lets Many People Use it at Once:
+Databases handle many people using the information at the same time. They make sure everyone gets the right data and that no one messes it up for others.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+3. What are the 2 primary ways of storing data in a computer?
+
+The two primary ways of storing data in a computer are-->
+
+Primary Storage (or Memory):
+This is the fast and temporary storage that the computer uses to store data that is actively being used or processed. It includes Random Access Memory (RAM) and Cache memory. Data is quickly accessible but is lost when the computer is turned off.
+
+Secondary Storage:
+This is the non-volatile, long-term storage used for saving data that needs to be preserved even when the computer is powered off. Examples include Hard Disk Drives (HDDs), Solid State Drives (SSDs), optical disks (like CDs or DVDs), and external drives. Data stored in secondary storage remains even after the computer is shut down.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+4. What is SQL and what is MySQL?
+
+* SQL (Structured Query Language):
+SQL is a programming language designed for managing and manipulating relational databases. It is used for tasks such as creating, retrieving, updating, and deleting data in databases. SQL provides a standardized way to interact with various database management systems (DBMS), allowing users to communicate with databases and perform operations on the data stored within them.
+
+* MySQL:
+MySQL is a relational database management system (RDBMS) that uses SQL as its query language. It is an open-source database system, which means that its source code is freely available, and users can modify and distribute it. MySQL is widely used for web applications and is known for its reliability, scalability, and ease of use. It supports various platforms and can be integrated with different programming languages, making it a popular choice for database-driven applications on the web.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+5. What is database?
+
+A database is a structured collection of data organized for efficient storage, retrieval, and management. It consists of tables with rows and columns, representing records and attributes. Databases are used to store and manage information in various applications, facilitating data organization and retrieval. Database management systems (DBMS) are software tools that enable users to interact with and manage databases efficiently. Examples of DBMS include MySQL, PostgreSQL, and Oracle.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+6. What is DBMS?
+
+DBMS stands for Database Management System. It is software that enables users to interact with databases, providing an interface to create, manage, and manipulate data efficiently. A DBMS serves as an intermediary between the database and the users or applications, facilitating tasks such as data storage, retrieval, modification, and deletion.
+
+Key functions of a DBMS -->
+
+* Data Definition: Allows users to define the structure of the database, including tables, relationships, and constraints.
+* Data Manipulation: Enables users to insert, update, retrieve, and delete data in the database. This is done through queries and commands.
+* Data Integrity: Enforces rules and constraints to maintain the accuracy and consistency of the data stored in the database.
+* Concurrency Control: Manages access to the database by multiple users or processes to prevent conflicts and ensure data consistency.
+* Security: Provides mechanisms to control access to the database, ensuring that only authorized users can perform specific operations.
+* Backup and Recovery: Supports the creation of backup copies of the database and provides tools for recovering data in case of failures or errors.
+
+Examples:  MySQL, PostgreSQL, Microsoft SQL Server, Oracle Database, and SQLite.
